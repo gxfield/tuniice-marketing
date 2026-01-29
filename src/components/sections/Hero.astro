@@ -1,0 +1,38 @@
+---
+// Hero section with brand name and tagline
+---
+
+<section class="hero">
+  <h1 class="brand">tuniice</h1>
+  <p class="tagline">music. software. hardware.</p>
+</section>
+
+<style>
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: var(--space-xl);
+    gap: var(--space-md);
+  }
+
+  .brand {
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 12vw, 8rem);
+    font-weight: 900;
+    color: var(--color-text);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: lowercase;
+  }
+
+  .tagline {
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    color: var(--color-text-muted);
+    letter-spacing: 0.2em;
+  }
+</style>

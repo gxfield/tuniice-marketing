@@ -1,0 +1,62 @@
+---
+// Product teaser cards section
+import Card from '../ui/Card.astro';
+---
+
+<section class="products" id="products">
+  <h2 class="section-heading">What's Coming</h2>
+  <div class="cards-grid">
+    <a href="#products" class="card-link" data-animate>
+      <Card accent="primary">
+        <h3>iOS Apps</h3>
+        <p>Music creation tools in development</p>
+      </Card>
+    </a>
+    <a href="#products" class="card-link" data-animate>
+      <Card accent="secondary">
+        <h3>Hardware</h3>
+        <p>Physical devices coming soon</p>
+      </Card>
+    </a>
+    <a href="#products" class="card-link" data-animate>
+      <Card accent="amber">
+        <h3>Web Tools</h3>
+        <p>Online utilities launching soon</p>
+      </Card>
+    </a>
+  </div>
+</section>
+
+<style>
+  .products {
+    padding: var(--space-2xl) var(--space-md);
+  }
+
+  .section-heading {
+    font-family: var(--font-heading);
+    font-size: var(--font-2xl);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    .cards-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

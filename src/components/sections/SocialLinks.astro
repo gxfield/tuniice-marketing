@@ -1,0 +1,33 @@
+---
+// Social media links section
+import Button from '../ui/Button.astro';
+---
+
+<section class="connect" id="connect">
+  <h2 class="section-heading">Connect</h2>
+  <div class="links-container" data-animate>
+    <Button href="https://bandcamp.com/tuniice" variant="primary" size="lg">Bandcamp</Button>
+    <Button href="https://soundcloud.com/tuniice" variant="secondary" size="lg">SoundCloud</Button>
+  </div>
+</section>
+
+<style>
+  .connect {
+    padding: var(--space-2xl) var(--space-md);
+  }
+
+  .section-heading {
+    font-family: var(--font-heading);
+    font-size: var(--font-2xl);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+  }
+
+  .links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+  }
+</style>
