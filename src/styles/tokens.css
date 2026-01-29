@@ -1,0 +1,40 @@
+:root {
+  /* Colors */
+  --color-bg: #0a0a0a;
+  --color-bg-elevated: #141414;
+  --color-text: #ffffff;
+  --color-text-muted: #a0a0a0;
+  --color-accent: #00ff41;
+  --color-accent-warm: #ff6b35;
+  --color-accent-amber: #ffbf00;
+  --color-border: #ffffff;
+
+  /* Typography */
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Space Mono', monospace;
+
+  /* Font sizes - Major third scale (1.25 ratio) */
+  --font-xs: 0.64rem;    /* 10.24px */
+  --font-sm: 0.8rem;     /* 12.8px */
+  --font-base: 1rem;     /* 16px */
+  --font-md: 1.25rem;    /* 20px */
+  --font-lg: 1.563rem;   /* 25px */
+  --font-xl: 1.953rem;   /* 31.25px */
+  --font-2xl: 2.441rem;  /* 39.06px */
+  --font-3xl: 3.052rem;  /* 48.83px */
+
+  /* Spacing - 8px grid */
+  --space-xs: 0.5rem;    /* 8px */
+  --space-sm: 1rem;      /* 16px */
+  --space-md: 1.5rem;    /* 24px */
+  --space-lg: 2rem;      /* 32px */
+  --space-xl: 3rem;      /* 48px */
+  --space-2xl: 4rem;     /* 64px */
+
+  /* Neo-brutalist tokens */
+  --border-width: 3px;
+  --shadow-offset-sm: 2px;
+  --shadow-offset-md: 4px;
+  --shadow-offset-lg: 6px;
+  --radius: 0;
+}
