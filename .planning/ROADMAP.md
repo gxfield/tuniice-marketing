@@ -28,10 +28,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. Site has consistent neo-brutalist dark mode styling across all viewports
   3. Navigation with logo and hamburger menu works on all pages
   4. Reusable component library exists (buttons, cards, nav, footer)
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] TBD during phase planning
+- [ ] 01-01-PLAN.md — Scaffold Astro project with design tokens and global styles
+- [ ] 01-02-PLAN.md — Build component library (Button, Card, Header/Nav, Footer) and BaseLayout
+- [ ] 01-03-PLAN.md — Create page shells and deploy to Vercel
 
 ### Phase 2: Home & Core Content
 **Goal**: Visitors land on a compelling home page that establishes the tuniice brand
@@ -80,7 +82,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/TBD | Not started | - |
+| 1. Foundation | 0/3 | Not started | - |
 | 2. Home & Core Content | 0/TBD | Not started | - |
 | 3. Products Showcase | 0/TBD | Not started | - |
 | 4. About & Music | 0/TBD | Not started | - |
