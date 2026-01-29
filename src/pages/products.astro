@@ -1,0 +1,200 @@
+---
+// Products listing page
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProductCard from '../components/ui/ProductCard.astro';
+import NotifyForm from '../components/forms/NotifyForm.astro';
+import { products } from '../data/products';
+---
+
+<BaseLayout title="Products">
+  <div class="products-page">
+    <nav class="back-nav">
+      <a href="/" class="back-link">← Home</a>
+    </nav>
+
+    <header class="page-header">
+      <h1 class="page-title">What's Coming</h1>
+      <p class="page-intro">Apps and hardware in development. Get notified when we launch.</p>
+    </header>
+
+    <div class="products-grid">
+      {products.map((product) => (
+        <a href={`/products/${product.slug}`} class="product-link" data-animate>
+          <ProductCard product={product} />
+        </a>
+      ))}
+    </div>
+
+    <section class="notify-section" id="notify">
+      <h2 class="notify-heading">Stay in the Loop</h2>
+      <p class="notify-text">Get notified when we launch new products.</p>
+      <NotifyForm />
+    </section>
+
+    <button class="sticky-cta" aria-label="Scroll to signup form">
+      Get Notified
+    </button>
+  </div>
+</BaseLayout>
+
+<script>
+  function initStickyCTA() {
+    const ctaButton = document.querySelector('.sticky-cta') as HTMLButtonElement | null;
+    const notifySection = document.querySelector('#notify');
+
+    if (ctaButton && notifySection) {
+      ctaButton.addEventListener('click', () => {
+        notifySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+  }
+
+  // Initialize on page load
+  initStickyCTA();
+
+  // Reinitialize on view transitions
+  document.addEventListener('astro:page-load', initStickyCTA);
+</script>
+
+<style>
+  .products-page {
+    width: 100%;
+  }
+
+  .back-nav {
+    margin-bottom: var(--space-lg);
+  }
+
+  .back-link {
+    color: var(--color-text-muted);
+    font-family: var(--font-body);
+    font-size: var(--font-md);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .back-link:hover {
+    color: var(--color-accent);
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+  }
+
+  .page-title {
+    font-family: var(--font-heading);
+    font-size: var(--font-2xl);
+    font-weight: 900;
+    color: var(--color-text);
+    margin: 0 0 var(--space-md) 0;
+  }
+
+  .page-intro {
+    font-family: var(--font-body);
+    font-size: var(--font-md);
+    color: var(--color-text-muted);
+    margin: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-2xl);
+  }
+
+  .product-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .notify-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--space-2xl) 0;
+    text-align: center;
+    scroll-margin-bottom: 80px;
+  }
+
+  .notify-heading {
+    font-family: var(--font-heading);
+    font-size: var(--font-xl);
+    font-weight: 900;
+    color: var(--color-text);
+    margin: 0 0 var(--space-sm) 0;
+  }
+
+  .notify-text {
+    font-family: var(--font-body);
+    font-size: var(--font-md);
+    color: var(--color-text-muted);
+    margin: 0 0 var(--space-lg) 0;
+  }
+
+  .sticky-cta {
+    position: fixed;
+    bottom: var(--space-md);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    padding: var(--space-sm) var(--space-lg);
+    background: var(--color-accent);
+    color: var(--color-bg);
+    border: var(--border-width) solid var(--color-text);
+    font-family: var(--font-body);
+    font-size: var(--font-md);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    box-shadow: var(--shadow-offset-md) var(--shadow-offset-md) 0 var(--color-text);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .sticky-cta:hover {
+    transform: translateX(-50%) translate(-2px, -2px);
+    box-shadow: var(--shadow-offset-lg) var(--shadow-offset-lg) 0 var(--color-text);
+  }
+
+  .sticky-cta:active {
+    transform: translateX(-50%) translate(0, 0);
+    box-shadow: var(--shadow-offset-sm) var(--shadow-offset-sm) 0 var(--color-text);
+  }
+
+  @media (min-width: 768px) {
+    .products-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sticky-cta {
+      bottom: var(--space-lg);
+      right: var(--space-lg);
+      left: auto;
+      transform: none;
+    }
+
+    .sticky-cta:hover {
+      transform: translate(-2px, -2px);
+    }
+
+    .sticky-cta:active {
+      transform: translate(0, 0);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .products-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* Ensure sticky CTA doesn't obscure focused elements */
+  :focus {
+    scroll-margin-bottom: 80px;
+  }
+</style>
