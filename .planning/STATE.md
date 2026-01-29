@@ -64,11 +64,12 @@ Recent decisions affecting current work:
 
 ### Pending Todos
 
-None yet.
+1. **Switch to light-mode neo-brutalism styling** (area: ui) — Redesign site from dark mode to light-mode neo-brutalism per Behance reference
 
 ### Roadmap Evolution
 
 - Phase 1.1 inserted after Phase 1: Update Page Structure (URGENT)
+- Phase 1.2 inserted after Phase 1.1: Remove Header & Update Styling (URGENT)
 
 ### Blockers/Concerns
 
