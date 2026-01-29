@@ -32,7 +32,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md — Scaffold Astro project with design tokens and global styles (2m 51s)
-- [ ] 01-02-PLAN.md — Build component library (Button, Card, Header/Nav, Footer) and BaseLayout
+- [x] 01-02-PLAN.md — Build component library (Button, Card, Header/Nav, Footer) and BaseLayout (2m 30s)
 - [ ] 01-03-PLAN.md — Create page shells and deploy to Vercel
 
 ### Phase 2: Home & Core Content
@@ -82,7 +82,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 1/3 | In progress | - |
+| 1. Foundation | 2/3 | In progress | - |
 | 2. Home & Core Content | 0/TBD | Not started | - |
 | 3. Products Showcase | 0/TBD | Not started | - |
 | 4. About & Music | 0/TBD | Not started | - |
