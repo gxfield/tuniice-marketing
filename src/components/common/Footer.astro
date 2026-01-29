@@ -1,0 +1,43 @@
+---
+// Footer component with copyright and brand info
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <p class="copyright">&copy; {currentYear} tuniice</p>
+    <p class="built-by">Built by tuniice</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: var(--border-width) solid var(--color-border);
+    background: var(--color-bg);
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    font-family: var(--font-body);
+    font-size: var(--font-sm);
+  }
+
+  .copyright,
+  .built-by {
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  /* Desktop layout */
+  @media (min-width: 768px) {
+    .footer-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+</style>
