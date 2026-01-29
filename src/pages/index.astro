@@ -3,10 +3,42 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/sections/Hero.astro';
 import ProductTeasers from '../components/sections/ProductTeasers.astro';
 import SocialLinks from '../components/sections/SocialLinks.astro';
+import Button from '../components/ui/Button.astro';
 ---
 
 <BaseLayout title="Home">
   <Hero />
   <ProductTeasers />
+
+  <section class="about-teaser" data-animate>
+    <h2>About tuniice</h2>
+    <p>Music producer, software engineer, hardware tinkerer. Discover the story behind tuniice.</p>
+    <Button href="/story" variant="secondary" size="md">Read the Story</Button>
+  </section>
+
   <SocialLinks />
 </BaseLayout>
+
+<style>
+  .about-teaser {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--space-2xl) var(--space-md);
+    text-align: center;
+  }
+
+  .about-teaser h2 {
+    font-family: var(--font-heading);
+    font-size: var(--font-2xl);
+    color: var(--color-text);
+    margin: 0 0 var(--space-md);
+  }
+
+  .about-teaser p {
+    font-family: var(--font-body);
+    font-size: var(--font-md);
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin: 0 0 var(--space-lg);
+  }
+</style>
