@@ -75,8 +75,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Build section components (Hero, ProductTeasers, SocialLinks) and wire into index.astro
-- [ ] 02-02-PLAN.md — Add animation infrastructure (scroll animations, ClientRouter, reduced-motion support)
+- [x] 02-01-PLAN.md — Build section components (Hero, ProductTeasers, SocialLinks) and wire into index.astro (1m 23s)
+- [x] 02-02-PLAN.md — Add animation infrastructure (scroll animations, ClientRouter, reduced-motion support) (1m 4s)
 
 ### Phase 3: Products Showcase
 **Goal**: Products page showcases upcoming apps and hardware with launch notifications
@@ -114,6 +114,6 @@ Phases execute in numeric order: 1 → 1.1 → 1.2 → 2 → 3 → 4
 | 1. Foundation | 3/3 | Complete | 2026-01-28 |
 | 1.1. Update Page Structure | 1/1 | Complete | 2026-01-29 |
 | 1.2. Remove Header & Update Styling | 1/1 | Complete | 2026-01-29 |
-| 2. Home & Core Content | 0/2 | Planned | - |
+| 2. Home & Core Content | 2/2 | Complete | 2026-01-29 |
 | 3. Products Showcase | 0/TBD | Not started | - |
 | 4. About & Music | 0/TBD | Not started | - |
