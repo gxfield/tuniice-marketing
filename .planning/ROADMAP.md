@@ -14,6 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Astro project with design system and navigation
 - [x] **Phase 1.1: Update Page Structure** - (INSERTED)
+- [ ] **Phase 1.2: Remove Header & Update Styling** - (INSERTED)
 - [ ] **Phase 2: Home & Core Content** - Hero page with brand presence
 - [ ] **Phase 3: Products Showcase** - Coming soon teasers and product pages
 - [ ] **Phase 4: About & Music** - About page and music integrations
@@ -48,6 +49,19 @@ Plans:
 
 Plans:
 - [x] 01.1-01-PLAN.md — Delete extra pages and clean up all references to removed pages (36s)
+
+### Phase 1.2: Remove Header & Update Styling (INSERTED)
+**Goal**: Remove the header component and update site styling
+**Depends on**: Phase 1.1
+**Requirements**: None (structural/styling change)
+**Success Criteria** (what must be TRUE):
+  1. Header component is removed from the site
+  2. Site styling is updated as needed
+  3. Site builds and deploys without errors
+**Plans**: 1 plan
+
+Plans:
+- [ ] 01.2-01-PLAN.md — Remove Header component and adjust layout CSS for headerless design
 
 ### Phase 2: Home & Core Content
 **Goal**: Visitors land on a compelling home page that establishes the tuniice brand
@@ -92,12 +106,13 @@ Plans:
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 1.1 → 2 → 3 → 4
+Phases execute in numeric order: 1 → 1.1 → 1.2 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Complete | 2026-01-28 |
 | 1.1. Update Page Structure | 1/1 | Complete | 2026-01-29 |
+| 1.2. Remove Header & Update Styling | 0/TBD | Not started | - |
 | 2. Home & Core Content | 0/TBD | Not started | - |
 | 3. Products Showcase | 0/TBD | Not started | - |
 | 4. About & Music | 0/TBD | Not started | - |
