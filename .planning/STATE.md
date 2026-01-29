@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-01-28)
 
 **Core value:** The site must establish tuniice as a credible, distinctive brand that makes visitors want to follow what's coming next.
-**Current focus:** Phase 2 - Home & Core Content
+**Current focus:** Phase 3 - Products Showcase
 
 ## Current Position
 
-Phase: 2 of 4 (Home & Core Content)
-Plan: 2 of 2 in current phase
-Status: Phase complete
-Last activity: 2026-01-29 — Completed 02-01-PLAN.md and 02-02-PLAN.md (parallel execution)
+Phase: 3 of 4 (Products Showcase)
+Plan: 1 of 2 in current phase
+Status: In progress
+Last activity: 2026-01-29 — Completed 03-01-PLAN.md
 
-Progress: [███████████░░░░░░░░░] 58% (7/12 total plans)
+Progress: [████████████░░░░░░░░] 67% (8/12 total plans)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 7
-- Average duration: 1m 34s
-- Total execution time: 0.18 hours
+- Total plans completed: 8
+- Average duration: 1m 37s
+- Total execution time: 0.22 hours
 
 **By Phase:**
 
@@ -31,10 +31,11 @@ Progress: [███████████░░░░░░░░░] 58% (7/
 | 1.1. Update Page Structure | 1 | 36s | 36s |
 | 1.2. Remove Header & Update Styling | 1 | 54s | 54s |
 | 2. Home & Core Content | 2 | 2m 34s | 1m 17s |
+| 3. Products Showcase | 1 | 2m 15s | 2m 15s |
 
 **Recent Trend:**
-- Last 5 plans: 01.1-01 (36s), 01.2-01 (54s), 02-01 (1m 30s), 02-02 (1m 4s)
-- Trend: Stable (recent phases between 30s-2m)
+- Last 5 plans: 01.2-01 (54s), 02-01 (1m 30s), 02-02 (1m 4s), 03-01 (2m 15s)
+- Trend: Stable (recent phases between 1m-2m 30s)
 
 *Updated after each plan completion*
 
@@ -72,6 +73,10 @@ Recent decisions affecting current work:
 - Native Intersection Observer over animation libraries for zero-dependency scroll effects (Phase 2, Plan 02)
 - astro:page-load event for observer initialization to support view transitions (Phase 2, Plan 02)
 - Threshold 0.15 and rootMargin -10% for scroll animation triggers (Phase 2, Plan 02)
+- Filter-based muted Card state (grayscale + opacity) for coming-soon visual treatment (Phase 3, Plan 01)
+- Client-side form submission with fetch API for immediate feedback without page reload (Phase 3, Plan 01)
+- Hand-coded geometric SVG product images using design token CSS variables (Phase 3, Plan 01)
+- Formspree integration for email signup backend on static site (Phase 3, Plan 01)
 
 ### Pending Todos
 
@@ -88,6 +93,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-01-29T16:33:57Z
-Stopped at: Completed Phase 2 (both plans 02-01 and 02-02 executed in parallel)
+Last session: 2026-01-29T18:28:24Z
+Stopped at: Completed 03-01-PLAN.md
 Resume file: None
