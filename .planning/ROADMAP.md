@@ -72,10 +72,11 @@ Plans:
   2. Product preview teasers link to Products page
   3. Social links (Bandcamp, SoundCloud) are visible and functional
   4. Page transitions and hover effects work throughout the site
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] TBD during phase planning
+- [ ] 02-01-PLAN.md — Build section components (Hero, ProductTeasers, SocialLinks) and wire into index.astro
+- [ ] 02-02-PLAN.md — Add animation infrastructure (scroll animations, ClientRouter, reduced-motion support)
 
 ### Phase 3: Products Showcase
 **Goal**: Products page showcases upcoming apps and hardware with launch notifications
