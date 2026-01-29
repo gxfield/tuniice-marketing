@@ -86,10 +86,11 @@ Plans:
   1. Products page displays coming soon cards for apps and hardware in separate sections
   2. Each product has a detail page (even if content is sparse)
   3. Email signup form captures launch notification signups
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] TBD during phase planning
+- [ ] 03-01-PLAN.md — Create product data, SVG images, and reusable components (Card muted variant, ProductCard, NotifyForm)
+- [ ] 03-02-PLAN.md — Build products listing page, product detail pages, sticky CTA, and update home page links
 
 ### Phase 4: About & Music
 **Goal**: About and Music pages complete the brand story
