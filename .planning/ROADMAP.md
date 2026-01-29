@@ -100,10 +100,11 @@ Plans:
   1. About page tells Greg's story with photo and technical background
   2. Contact information is accessible (email or form)
   3. Music page embeds Bandcamp players for releases
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] TBD during phase planning
+- [ ] 04-01-PLAN.md — Build Story page with Avatar, StoryHero, Narrative, MusicEmbeds, and Connect sections
+- [ ] 04-02-PLAN.md — Add Story navigation to Footer and About teaser to home page
 
 ## Progress
 
@@ -117,4 +118,4 @@ Phases execute in numeric order: 1 → 1.1 → 1.2 → 2 → 3 → 4
 | 1.2. Remove Header & Update Styling | 1/1 | Complete | 2026-01-29 |
 | 2. Home & Core Content | 2/2 | Complete | 2026-01-29 |
 | 3. Products Showcase | 2/2 | Complete | 2026-01-29 |
-| 4. About & Music | 0/TBD | Not started | - |
+| 4. About & Music | 0/2 | Not started | - |
