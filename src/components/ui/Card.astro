@@ -2,12 +2,13 @@
 // Card component with neo-brutalist styling
 interface Props {
   accent?: 'primary' | 'secondary' | 'amber';
+  muted?: boolean;
 }
 
-const { accent = 'primary' } = Astro.props;
+const { accent = 'primary', muted = false } = Astro.props;
 ---
 
-<article class={`card card-${accent}`}>
+<article class={`card card-${accent} ${muted ? 'card-muted' : ''}`}>
   <slot />
 </article>
 
@@ -47,6 +48,16 @@ const { accent = 'primary' } = Astro.props;
 
   .card-amber:hover {
     box-shadow: var(--shadow-offset-lg) var(--shadow-offset-lg) 0 var(--color-accent-amber);
+  }
+
+  /* Muted state for coming-soon products */
+  .card-muted {
+    filter: grayscale(40%) opacity(75%);
+    transition: filter 0.3s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .card-muted:hover {
+    filter: grayscale(20%) opacity(90%);
   }
 
   /* Desktop padding increase */
