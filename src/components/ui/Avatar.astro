@@ -1,0 +1,71 @@
+---
+// Avatar component - Geometric SVG placeholder with neo-brutalist styling
+interface Props {
+  size?: 'md' | 'lg';
+}
+
+const { size = 'md' } = Astro.props;
+---
+
+<div class={`avatar avatar-${size}`}>
+  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background circle -->
+    <circle
+      cx="100"
+      cy="100"
+      r="95"
+      fill="var(--color-bg-elevated)"
+      stroke="var(--color-border)"
+      stroke-width="3"
+    />
+    <!-- Top geometric shape - triangle -->
+    <polygon
+      points="100,40 70,80 130,80"
+      fill="var(--color-accent)"
+      stroke="var(--color-border)"
+      stroke-width="3"
+    />
+    <!-- Middle geometric shape - rectangle -->
+    <rect
+      x="70"
+      y="90"
+      width="60"
+      height="40"
+      fill="var(--color-accent-warm)"
+      stroke="var(--color-border)"
+      stroke-width="3"
+    />
+    <!-- Bottom geometric shape - circle -->
+    <circle
+      cx="100"
+      cy="155"
+      r="20"
+      fill="var(--color-accent-amber)"
+      stroke="var(--color-border)"
+      stroke-width="3"
+    />
+  </svg>
+</div>
+
+<style>
+  .avatar {
+    display: inline-block;
+    width: 100%;
+    border: var(--border-width) solid var(--color-border);
+    background: var(--color-bg-elevated);
+  }
+
+  .avatar svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .avatar-md {
+    max-width: 200px;
+  }
+
+  .avatar-lg {
+    max-width: 300px;
+  }
+</style>

@@ -1,0 +1,98 @@
+---
+// Music embeds section - Bandcamp and SoundCloud players
+import Button from '../ui/Button.astro';
+---
+
+<section class="music-embeds">
+  <h2 class="section-heading">Music</h2>
+
+  <div class="player-block" data-animate>
+    <h3 class="player-label">Latest Release</h3>
+    <div class="player-wrapper">
+      <iframe
+        class="music-player bandcamp-player"
+        src="https://bandcamp.com/EmbeddedPlayer/album=PLACEHOLDER/size=large/bgcol=0a0a0a/linkcol=00ff41/tracklist=false/artwork=small/transparent=true/"
+        loading="lazy"
+        title="Bandcamp player"
+      ></iframe>
+    </div>
+  </div>
+
+  <div class="player-block" data-animate>
+    <h3 class="player-label">Recent Tracks</h3>
+    <div class="player-wrapper">
+      <iframe
+        class="music-player soundcloud-player"
+        src="https://w.soundcloud.com/player/?url=PLACEHOLDER&color=%2300ff41&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"
+        loading="lazy"
+        title="SoundCloud player"
+      ></iframe>
+    </div>
+  </div>
+
+  <div class="discography-link" data-animate>
+    <Button href="https://bandcamp.com/tuniice" variant="secondary" size="md">
+      View full discography
+    </Button>
+  </div>
+</section>
+
+<style>
+  .music-embeds {
+    padding: var(--space-2xl) var(--space-md);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .section-heading {
+    font-family: var(--font-heading);
+    font-size: var(--font-2xl);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+  }
+
+  .player-block {
+    margin-bottom: var(--space-2xl);
+  }
+
+  .player-label {
+    font-family: var(--font-heading);
+    font-size: var(--font-lg);
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+    color: var(--color-text);
+  }
+
+  .player-wrapper {
+    border: var(--border-width) solid var(--color-border);
+    background: var(--color-bg-elevated);
+    overflow: hidden;
+  }
+
+  .music-player {
+    width: 100%;
+    border: none;
+    display: block;
+  }
+
+  .bandcamp-player {
+    aspect-ratio: 16 / 9;
+    min-height: 120px;
+  }
+
+  .soundcloud-player {
+    height: 166px;
+  }
+
+  .discography-link {
+    text-align: center;
+    margin-top: var(--space-xl);
+  }
+
+  @media (min-width: 768px) {
+    .music-embeds {
+      padding: var(--space-2xl) var(--space-lg);
+    }
+  }
+</style>
