@@ -9,7 +9,7 @@
 
 - [x] **DSGN-01**: Site has a design token system (color palette, typography scale, spacing)
 - [x] **DSGN-02**: Reusable component library (buttons, cards, nav, footer)
-- [ ] **DSGN-03**: Page transitions, hover effects, and scroll animations
+- [x] **DSGN-03**: Page transitions, hover effects, and scroll animations
 - [x] **DSGN-04**: Custom fonts selected for neo-brutalist aesthetic
 - [x] **DSGN-05**: Responsive layout for mobile and desktop
 
@@ -19,9 +19,9 @@
 
 ### Home Page
 
-- [ ] **HOME-01**: Hero section with brand name, tagline, and visual impact
-- [ ] **HOME-02**: Product preview teasers linking to Products page
-- [ ] **HOME-03**: Social links (Bandcamp, SoundCloud, etc.)
+- [x] **HOME-01**: Hero section with brand name, tagline, and visual impact
+- [x] **HOME-02**: Product preview teasers linking to Products page
+- [x] **HOME-03**: Social links (Bandcamp, SoundCloud, etc.)
 
 ### Products
 
@@ -87,10 +87,10 @@
 | DSGN-04 | Phase 1 | Complete |
 | DSGN-05 | Phase 1 | Complete |
 | NAV-01 | Phase 1 | Complete |
-| HOME-01 | Phase 2 | Pending |
-| HOME-02 | Phase 2 | Pending |
-| HOME-03 | Phase 2 | Pending |
-| DSGN-03 | Phase 2 | Pending |
+| HOME-01 | Phase 2 | Complete |
+| HOME-02 | Phase 2 | Complete |
+| HOME-03 | Phase 2 | Complete |
+| DSGN-03 | Phase 2 | Complete |
 | PROD-01 | Phase 3 | Pending |
 | PROD-02 | Phase 3 | Pending |
 | PROD-03 | Phase 3 | Pending |
@@ -108,4 +108,4 @@
 
 ---
 *Requirements defined: 2026-01-28*
-*Last updated: 2026-01-28 after roadmap creation*
+*Last updated: 2026-01-29 after Phase 2 completion*
