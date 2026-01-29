@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Astro project with design system and navigation
 - [x] **Phase 1.1: Update Page Structure** - (INSERTED)
-- [ ] **Phase 1.2: Remove Header & Update Styling** - (INSERTED)
+- [x] **Phase 1.2: Remove Header & Update Styling** - (INSERTED)
 - [ ] **Phase 2: Home & Core Content** - Hero page with brand presence
 - [ ] **Phase 3: Products Showcase** - Coming soon teasers and product pages
 - [ ] **Phase 4: About & Music** - About page and music integrations
@@ -61,7 +61,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 01.2-01-PLAN.md — Remove Header component and adjust layout CSS for headerless design
+- [x] 01.2-01-PLAN.md — Remove Header component and adjust layout CSS for headerless design (54s)
 
 ### Phase 2: Home & Core Content
 **Goal**: Visitors land on a compelling home page that establishes the tuniice brand
@@ -113,7 +113,7 @@ Phases execute in numeric order: 1 → 1.1 → 1.2 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Complete | 2026-01-28 |
 | 1.1. Update Page Structure | 1/1 | Complete | 2026-01-29 |
-| 1.2. Remove Header & Update Styling | 0/TBD | Not started | - |
+| 1.2. Remove Header & Update Styling | 1/1 | Complete | 2026-01-29 |
 | 2. Home & Core Content | 0/2 | Planned | - |
 | 3. Products Showcase | 0/TBD | Not started | - |
 | 4. About & Music | 0/TBD | Not started | - |
