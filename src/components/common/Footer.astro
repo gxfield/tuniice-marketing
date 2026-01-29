@@ -5,8 +5,15 @@ const currentYear = new Date().getFullYear();
 
 <footer class="site-footer">
   <div class="footer-container">
-    <p class="copyright">&copy; {currentYear} tuniice</p>
-    <p class="built-by">Built by tuniice</p>
+    <nav class="footer-nav">
+      <a href="/">Home</a>
+      <a href="/products">Products</a>
+      <a href="/story">Story</a>
+    </nav>
+    <div class="footer-meta">
+      <p class="copyright">&copy; {currentYear} tuniice</p>
+      <p class="built-by">Built by tuniice</p>
+    </div>
   </div>
 </footer>
 
@@ -22,9 +29,31 @@ const currentYear = new Date().getFullYear();
     padding: var(--space-md);
     display: flex;
     flex-direction: column;
-    gap: var(--space-xs);
+    gap: var(--space-md);
     font-family: var(--font-body);
     font-size: var(--font-sm);
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-md);
+  }
+
+  .footer-nav a {
+    color: var(--color-text-muted);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+  }
+
+  .footer-nav a:hover {
+    color: var(--color-accent);
+  }
+
+  .footer-meta {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
   }
 
   .copyright,
@@ -38,6 +67,7 @@ const currentYear = new Date().getFullYear();
     .footer-container {
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
     }
   }
 </style>
