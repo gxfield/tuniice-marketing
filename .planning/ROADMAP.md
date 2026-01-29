@@ -17,7 +17,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1.2: Remove Header & Update Styling** - (INSERTED)
 - [x] **Phase 2: Home & Core Content** - Hero page with brand presence
 - [x] **Phase 3: Products Showcase** - Coming soon teasers and product pages
-- [ ] **Phase 4: About & Music** - About page and music integrations
+- [x] **Phase 4: About & Music** - About page and music integrations
 
 ## Phase Details
 
@@ -103,8 +103,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — Build Story page with Avatar, StoryHero, Narrative, MusicEmbeds, and Connect sections
-- [ ] 04-02-PLAN.md — Add Story navigation to Footer and About teaser to home page
+- [x] 04-01-PLAN.md — Build Story page with Avatar, StoryHero, Narrative, MusicEmbeds, and Connect sections (2m)
+- [x] 04-02-PLAN.md — Add Story navigation to Footer and About teaser to home page (1m 4s)
 
 ## Progress
 
@@ -118,4 +118,4 @@ Phases execute in numeric order: 1 → 1.1 → 1.2 → 2 → 3 → 4
 | 1.2. Remove Header & Update Styling | 1/1 | Complete | 2026-01-29 |
 | 2. Home & Core Content | 2/2 | Complete | 2026-01-29 |
 | 3. Products Showcase | 2/2 | Complete | 2026-01-29 |
-| 4. About & Music | 0/2 | Not started | - |
+| 4. About & Music | 2/2 | Complete | 2026-01-29 |

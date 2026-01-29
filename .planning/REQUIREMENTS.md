@@ -32,14 +32,14 @@
 
 ### Music / Art
 
-- [ ] **MUSC-01**: Bandcamp embedded players for releases
+- [x] **MUSC-01**: Bandcamp embedded players for releases
 
 ### About
 
-- [ ] **ABUT-01**: Bio / story about Greg and the tuniice mission
-- [ ] **ABUT-02**: Photo or avatar image
-- [ ] **ABUT-03**: Contact info (email or contact form)
-- [ ] **ABUT-04**: Technical background, tools, and skills
+- [x] **ABUT-01**: Bio / story about Greg and the tuniice mission
+- [x] **ABUT-02**: Photo or avatar image
+- [x] **ABUT-03**: Contact info (email or contact form)
+- [x] **ABUT-04**: Technical background, tools, and skills
 
 ### Infrastructure
 
@@ -95,11 +95,11 @@
 | PROD-02 | Phase 3 | Complete |
 | PROD-03 | Phase 3 | Complete |
 | PROD-04 | Phase 3 | Complete |
-| ABUT-01 | Phase 4 | Pending |
-| ABUT-02 | Phase 4 | Pending |
-| ABUT-03 | Phase 4 | Pending |
-| ABUT-04 | Phase 4 | Pending |
-| MUSC-01 | Phase 4 | Pending |
+| ABUT-01 | Phase 4 | Complete |
+| ABUT-02 | Phase 4 | Complete |
+| ABUT-03 | Phase 4 | Complete |
+| ABUT-04 | Phase 4 | Complete |
+| MUSC-01 | Phase 4 | Complete |
 
 **Coverage:**
 - v1 requirements: 20 total
@@ -108,4 +108,4 @@
 
 ---
 *Requirements defined: 2026-01-28*
-*Last updated: 2026-01-29 after Phase 3 completion*
+*Last updated: 2026-01-29 after Phase 4 completion*
