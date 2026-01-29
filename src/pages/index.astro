@@ -1,8 +1,44 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
 ---
 
 <BaseLayout title="Home">
   <h1>tuniice</h1>
   <p>music, software, hardware</p>
+
+  <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 2rem;">
+    <div>
+      <h2>Buttons</h2>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <Button variant="primary" size="sm">Small Primary</Button>
+        <Button variant="primary" size="md">Medium Primary</Button>
+        <Button variant="primary" size="lg">Large Primary</Button>
+      </div>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+        <Button variant="secondary" size="sm">Small Secondary</Button>
+        <Button variant="secondary" size="md">Medium Secondary</Button>
+        <Button variant="secondary" size="lg">Large Secondary</Button>
+      </div>
+    </div>
+
+    <div>
+      <h2>Cards</h2>
+      <div style="display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        <Card accent="primary">
+          <h3>Primary Card</h3>
+          <p>This card has a neon green shadow.</p>
+        </Card>
+        <Card accent="secondary">
+          <h3>Secondary Card</h3>
+          <p>This card has an orange shadow.</p>
+        </Card>
+        <Card accent="amber">
+          <h3>Amber Card</h3>
+          <p>This card has a yellow shadow.</p>
+        </Card>
+      </div>
+    </div>
+  </div>
 </BaseLayout>

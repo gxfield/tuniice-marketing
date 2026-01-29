@@ -1,0 +1,58 @@
+---
+// Card component with neo-brutalist styling
+interface Props {
+  accent?: 'primary' | 'secondary' | 'amber';
+}
+
+const { accent = 'primary' } = Astro.props;
+---
+
+<article class={`card card-${accent}`}>
+  <slot />
+</article>
+
+<style>
+  .card {
+    padding: var(--space-md);
+    border: var(--border-width) solid var(--color-border);
+    background: var(--color-bg-elevated);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  /* Accent variants */
+  .card-primary {
+    box-shadow: var(--shadow-offset-md) var(--shadow-offset-md) 0 var(--color-accent);
+  }
+
+  .card-secondary {
+    box-shadow: var(--shadow-offset-md) var(--shadow-offset-md) 0 var(--color-accent-warm);
+  }
+
+  .card-amber {
+    box-shadow: var(--shadow-offset-md) var(--shadow-offset-md) 0 var(--color-accent-amber);
+  }
+
+  /* Hover effect */
+  .card:hover {
+    transform: translate(-2px, -2px);
+  }
+
+  .card-primary:hover {
+    box-shadow: var(--shadow-offset-lg) var(--shadow-offset-lg) 0 var(--color-accent);
+  }
+
+  .card-secondary:hover {
+    box-shadow: var(--shadow-offset-lg) var(--shadow-offset-lg) 0 var(--color-accent-warm);
+  }
+
+  .card-amber:hover {
+    box-shadow: var(--shadow-offset-lg) var(--shadow-offset-lg) 0 var(--color-accent-amber);
+  }
+
+  /* Desktop padding increase */
+  @media (min-width: 768px) {
+    .card {
+      padding: var(--space-lg);
+    }
+  }
+</style>
