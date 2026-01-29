@@ -80,32 +80,32 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DSGN-01 | — | Pending |
-| DSGN-02 | — | Pending |
-| DSGN-03 | — | Pending |
-| DSGN-04 | — | Pending |
-| DSGN-05 | — | Pending |
-| NAV-01 | — | Pending |
-| HOME-01 | — | Pending |
-| HOME-02 | — | Pending |
-| HOME-03 | — | Pending |
-| PROD-01 | — | Pending |
-| PROD-02 | — | Pending |
-| PROD-03 | — | Pending |
-| PROD-04 | — | Pending |
-| MUSC-01 | — | Pending |
-| ABUT-01 | — | Pending |
-| ABUT-02 | — | Pending |
-| ABUT-03 | — | Pending |
-| ABUT-04 | — | Pending |
-| INFR-01 | — | Pending |
-| INFR-02 | — | Pending |
+| INFR-01 | Phase 1 | Pending |
+| INFR-02 | Phase 1 | Pending |
+| DSGN-01 | Phase 1 | Pending |
+| DSGN-02 | Phase 1 | Pending |
+| DSGN-04 | Phase 1 | Pending |
+| DSGN-05 | Phase 1 | Pending |
+| NAV-01 | Phase 1 | Pending |
+| HOME-01 | Phase 2 | Pending |
+| HOME-02 | Phase 2 | Pending |
+| HOME-03 | Phase 2 | Pending |
+| DSGN-03 | Phase 2 | Pending |
+| PROD-01 | Phase 3 | Pending |
+| PROD-02 | Phase 3 | Pending |
+| PROD-03 | Phase 3 | Pending |
+| PROD-04 | Phase 3 | Pending |
+| ABUT-01 | Phase 4 | Pending |
+| ABUT-02 | Phase 4 | Pending |
+| ABUT-03 | Phase 4 | Pending |
+| ABUT-04 | Phase 4 | Pending |
+| MUSC-01 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 20 total
-- Mapped to phases: 0
-- Unmapped: 20
+- Mapped to phases: 20
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-01-28*
-*Last updated: 2026-01-28 after initial definition*
+*Last updated: 2026-01-28 after roadmap creation*
