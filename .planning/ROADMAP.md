@@ -114,6 +114,6 @@ Phases execute in numeric order: 1 → 1.1 → 1.2 → 2 → 3 → 4
 | 1. Foundation | 3/3 | Complete | 2026-01-28 |
 | 1.1. Update Page Structure | 1/1 | Complete | 2026-01-29 |
 | 1.2. Remove Header & Update Styling | 0/TBD | Not started | - |
-| 2. Home & Core Content | 0/TBD | Not started | - |
+| 2. Home & Core Content | 0/2 | Planned | - |
 | 3. Products Showcase | 0/TBD | Not started | - |
 | 4. About & Music | 0/TBD | Not started | - |
