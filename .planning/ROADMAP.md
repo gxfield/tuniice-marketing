@@ -13,6 +13,7 @@ A marketing site that establishes tuniice as a credible, distinctive brand throu
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Astro project with design system and navigation
+- [ ] **Phase 1.1: Update Page Structure** - (INSERTED)
 - [ ] **Phase 2: Home & Core Content** - Hero page with brand presence
 - [ ] **Phase 3: Products Showcase** - Coming soon teasers and product pages
 - [ ] **Phase 4: About & Music** - About page and music integrations
@@ -34,6 +35,19 @@ Plans:
 - [x] 01-01-PLAN.md — Scaffold Astro project with design tokens and global styles (2m 51s)
 - [x] 01-02-PLAN.md — Build component library (Button, Card, Header/Nav, Footer) and BaseLayout (2m 30s)
 - [x] 01-03-PLAN.md — Create page shells and deploy to Vercel (3m)
+
+### Phase 1.1: Update Page Structure (INSERTED)
+**Goal**: Convert the multi-page site to a single-page site — only the home page remains, all other pages (about, music, products) are removed, and navigation is updated accordingly
+**Depends on**: Phase 1
+**Requirements**: None (structural change, not a feature requirement)
+**Success Criteria** (what must be TRUE):
+  1. Only index.astro exists in src/pages/ (about, music, products pages removed)
+  2. Navigation no longer links to removed pages (updated or simplified)
+  3. Site builds and deploys without broken links or references
+**Plans**: 1 plan
+
+Plans:
+- [ ] 01.1-01-PLAN.md — Delete extra pages and clean up all references to removed pages
 
 ### Phase 2: Home & Core Content
 **Goal**: Visitors land on a compelling home page that establishes the tuniice brand
@@ -78,11 +92,12 @@ Plans:
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4
+Phases execute in numeric order: 1 → 1.1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Complete | 2026-01-28 |
+| 1.1. Update Page Structure | 0/TBD | Not started | - |
 | 2. Home & Core Content | 0/TBD | Not started | - |
 | 3. Products Showcase | 0/TBD | Not started | - |
 | 4. About & Music | 0/TBD | Not started | - |
