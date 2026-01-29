@@ -12,7 +12,7 @@ A marketing site that establishes tuniice as a credible, distinctive brand throu
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Astro project with design system and navigation
+- [x] **Phase 1: Foundation** - Astro project with design system and navigation
 - [ ] **Phase 2: Home & Core Content** - Hero page with brand presence
 - [ ] **Phase 3: Products Showcase** - Coming soon teasers and product pages
 - [ ] **Phase 4: About & Music** - About page and music integrations
@@ -33,7 +33,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 Plans:
 - [x] 01-01-PLAN.md — Scaffold Astro project with design tokens and global styles (2m 51s)
 - [x] 01-02-PLAN.md — Build component library (Button, Card, Header/Nav, Footer) and BaseLayout (2m 30s)
-- [ ] 01-03-PLAN.md — Create page shells and deploy to Vercel
+- [x] 01-03-PLAN.md — Create page shells and deploy to Vercel (3m)
 
 ### Phase 2: Home & Core Content
 **Goal**: Visitors land on a compelling home page that establishes the tuniice brand
@@ -82,7 +82,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 2/3 | In progress | - |
+| 1. Foundation | 3/3 | Complete | 2026-01-28 |
 | 2. Home & Core Content | 0/TBD | Not started | - |
 | 3. Products Showcase | 0/TBD | Not started | - |
 | 4. About & Music | 0/TBD | Not started | - |
