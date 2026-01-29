@@ -1,57 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Card from '../components/ui/Card.astro';
+import Hero from '../components/sections/Hero.astro';
+import ProductTeasers from '../components/sections/ProductTeasers.astro';
+import SocialLinks from '../components/sections/SocialLinks.astro';
 ---
 
 <BaseLayout title="Home">
-  <div class="home-container">
-    <section class="hero">
-      <h1 class="brand">tuniice</h1>
-      <p class="tagline">music. software. hardware.</p>
-    </section>
-
-    <Card accent="primary">
-      <h2>Coming Soon</h2>
-      <p>Stay tuned for updates on our latest projects and releases.</p>
-    </Card>
-  </div>
+  <Hero />
+  <ProductTeasers />
+  <SocialLinks />
 </BaseLayout>
-
-<style>
-  .home-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: var(--space-md);
-  }
-
-  .hero {
-    text-align: center;
-    padding: var(--space-2xl) 0;
-  }
-
-  .brand {
-    font-family: var(--font-heading);
-    font-size: var(--font-3xl);
-    font-weight: 900;
-    color: var(--color-text);
-    margin-bottom: var(--space-md);
-    line-height: 1;
-  }
-
-  .tagline {
-    font-family: var(--font-body);
-    font-size: var(--font-md);
-    color: var(--color-text-muted);
-    margin-bottom: var(--space-xl);
-  }
-
-  @media (min-width: 768px) {
-    .home-container {
-      padding: var(--space-xl);
-    }
-
-    .brand {
-      font-size: 4.5rem;
-    }
-  }
-</style>
