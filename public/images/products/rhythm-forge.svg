@@ -1,0 +1,16 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#141414"/>
+  <!-- Beat grid pattern - 4x4 grid of rectangles -->
+  <rect x="60" y="60" width="50" height="50" fill="var(--color-accent, #00ff41)" stroke="#ffffff" stroke-width="3"/>
+  <rect x="130" y="60" width="50" height="50" fill="var(--color-accent, #00ff41)" stroke="#ffffff" stroke-width="3"/>
+  <rect x="200" y="60" width="50" height="50" fill="var(--color-accent, #00ff41)" stroke="#ffffff" stroke-width="3"/>
+  <rect x="270" y="60" width="50" height="50" fill="var(--color-accent, #00ff41)" stroke="#ffffff" stroke-width="3"/>
+  <rect x="60" y="130" width="50" height="50" fill="var(--color-accent, #00ff41)" stroke="#ffffff" stroke-width="3"/>
+  <rect x="130" y="130" width="50" height="50" fill="var(--color-accent, #00ff41)" stroke="#ffffff" stroke-width="3"/>
+  <rect x="200" y="130" width="50" height="50" fill="var(--color-accent, #00ff41)" stroke="#ffffff" stroke-width="3"/>
+  <rect x="270" y="130" width="50" height="50" fill="var(--color-accent, #00ff41)" stroke="#ffffff" stroke-width="3"/>
+  <rect x="60" y="200" width="50" height="50" fill="var(--color-accent, #00ff41)" stroke="#ffffff" stroke-width="3"/>
+  <rect x="130" y="200" width="50" height="50" fill="var(--color-accent, #00ff41)" stroke="#ffffff" stroke-width="3"/>
+  <rect x="200" y="200" width="50" height="50" fill="var(--color-accent, #00ff41)" stroke="#ffffff" stroke-width="3"/>
+  <rect x="270" y="200" width="50" height="50" fill="var(--color-accent, #00ff41)" stroke="#ffffff" stroke-width="3"/>
+</svg>
