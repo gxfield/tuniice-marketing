@@ -7,15 +7,15 @@
 
 ### Design System
 
-- [ ] **DSGN-01**: Site has a design token system (color palette, typography scale, spacing)
-- [ ] **DSGN-02**: Reusable component library (buttons, cards, nav, footer)
+- [x] **DSGN-01**: Site has a design token system (color palette, typography scale, spacing)
+- [x] **DSGN-02**: Reusable component library (buttons, cards, nav, footer)
 - [ ] **DSGN-03**: Page transitions, hover effects, and scroll animations
-- [ ] **DSGN-04**: Custom fonts selected for neo-brutalist aesthetic
-- [ ] **DSGN-05**: Responsive layout for mobile and desktop
+- [x] **DSGN-04**: Custom fonts selected for neo-brutalist aesthetic
+- [x] **DSGN-05**: Responsive layout for mobile and desktop
 
 ### Navigation
 
-- [ ] **NAV-01**: Minimal navigation with logo and hamburger menu
+- [x] **NAV-01**: Minimal navigation with logo and hamburger menu
 
 ### Home Page
 
@@ -43,8 +43,8 @@
 
 ### Infrastructure
 
-- [ ] **INFR-01**: Astro project scaffolded and configured
-- [ ] **INFR-02**: Deployed to Vercel
+- [x] **INFR-01**: Astro project scaffolded and configured
+- [x] **INFR-02**: Deployed to Vercel
 
 ## v2 Requirements
 
@@ -80,13 +80,13 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| INFR-01 | Phase 1 | Pending |
-| INFR-02 | Phase 1 | Pending |
-| DSGN-01 | Phase 1 | Pending |
-| DSGN-02 | Phase 1 | Pending |
-| DSGN-04 | Phase 1 | Pending |
-| DSGN-05 | Phase 1 | Pending |
-| NAV-01 | Phase 1 | Pending |
+| INFR-01 | Phase 1 | Complete |
+| INFR-02 | Phase 1 | Complete |
+| DSGN-01 | Phase 1 | Complete |
+| DSGN-02 | Phase 1 | Complete |
+| DSGN-04 | Phase 1 | Complete |
+| DSGN-05 | Phase 1 | Complete |
+| NAV-01 | Phase 1 | Complete |
 | HOME-01 | Phase 2 | Pending |
 | HOME-02 | Phase 2 | Pending |
 | HOME-03 | Phase 2 | Pending |
