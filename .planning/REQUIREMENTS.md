@@ -15,9 +15,9 @@ Requirements for v1.1 UI Candy & Subdomains. Each maps to roadmap phases.
 
 ### Animated Backgrounds
 
-- [ ] **ANIM-01**: User sees animated particle field in hero section on pages that have one
-- [ ] **ANIM-02**: Canvas animation starts/stops cleanly on page navigation (no stacking RAF loops)
-- [ ] **ANIM-03**: Canvas renders crisply on HiDPI displays (ResizeObserver + DPR capped at 2x)
+- [x] **ANIM-01**: User sees animated particle field in hero section on pages that have one
+- [x] **ANIM-02**: Canvas animation starts/stops cleanly on page navigation (no stacking RAF loops)
+- [x] **ANIM-03**: Canvas renders crisply on HiDPI displays (ResizeObserver + DPR capped at 2x)
 - [ ] **ANIM-04**: Canvas animation pauses when tab is backgrounded or canvas is off-viewport
 - [ ] **ANIM-05**: User with `prefers-reduced-motion` sees static fallback instead of animation
 
@@ -73,9 +73,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | TRANS-01 | Phase 7 | Complete |
 | TRANS-02 | Phase 7 | Complete |
 | TRANS-03 | Phase 7 | Complete |
-| ANIM-01 | Phase 8 | Pending |
-| ANIM-02 | Phase 8 | Pending |
-| ANIM-03 | Phase 8 | Pending |
+| ANIM-01 | Phase 8 | Complete |
+| ANIM-02 | Phase 8 | Complete |
+| ANIM-03 | Phase 8 | Complete |
 | ANIM-04 | Phase 8 | Pending |
 | ANIM-05 | Phase 8 | Pending |
 | FX-01 | Phase 9 | Pending |

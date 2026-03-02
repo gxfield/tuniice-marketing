@@ -18,16 +18,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-01)
 
 **Core value:** The site must establish tuniice as a credible, distinctive brand that makes visitors want to follow what's coming next.
-**Current focus:** Phase 7 — Page Transitions
+**Current focus:** Phase 8 — Canvas Animated Background
 
 ## Current Position
 
-Phase: 7 of 10 ([Phase 7: Page Transitions])
-Plan: 2 of 2 in current phase
+Phase: 8 of 10 ([Phase 8: Canvas Animated Background])
+Plan: 1 of 1 in current phase
 Status: Phase complete
-Last activity: 2026-03-02 — Completed 07-02 (slide transition on product detail, scale/zoom on story)
+Last activity: 2026-03-01 — Completed 08-01 (particle field canvas in hero, lifecycle-safe RAF, HiDPI scaling)
 
-Progress: [██░░░░░░░░] 25% (v1.1)
+Progress: [███░░░░░░░] 30% (v1.1)
 
 ## Accumulated Context
 
@@ -48,6 +48,9 @@ Recent decisions affecting v1.1:
 - Product detail slide uses directional reversal: forwards=slide-in-right, backwards=slide-in-left (spatial drill-down metaphor)
 - Story scale/zoom uses same animation forwards and backwards — no directional axis on scale
 - Story transition 800ms total (400ms+400ms) vs default 600ms — contemplative feel for that page
+- Canvas lifecycle: module-level rafId + astro:before-swap cancel + astro:page-load restart — prevents RAF stacking across navigations
+- visibilitychange and ResizeObserver listeners at module scope (not inside astro:page-load) — avoids listener stacking
+- DPR capped at 2x for GPU memory control on ultra-dense displays
 
 ### Pending Todos
 
@@ -59,6 +62,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-02
-Stopped at: Completed 07-02-PLAN.md (Phase 07 complete)
+Last session: 2026-03-01
+Stopped at: Completed 08-01-PLAN.md (Phase 08 complete)
 Resume file: None
