@@ -42,7 +42,10 @@ const Tag = href ? 'a' : 'button';
   }
 
   .btn-secondary {
+    --mag-x: 0px;
+    --mag-y: 0px;
     box-shadow: var(--shadow-offset-md) var(--shadow-offset-md) 0 var(--color-accent-warm);
+    will-change: transform;
   }
 
   /* Size variants */
@@ -75,6 +78,7 @@ const Tag = href ? 'a' : 'button';
 
   .btn-secondary:hover,
   .btn-secondary:focus-visible {
+    transform: translate(calc(-2px + var(--mag-x)), calc(-2px + var(--mag-y)));
     box-shadow: var(--shadow-offset-lg) var(--shadow-offset-lg) 0 var(--color-accent-warm);
   }
 
@@ -99,7 +103,7 @@ const Tag = href ? 'a' : 'button';
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (!ptrFine || reducedMotion) return;
 
-    const buttons = document.querySelectorAll('.btn-primary');
+    const buttons = document.querySelectorAll('.btn-primary, .btn-secondary');
 
     buttons.forEach((btn) => {
       function onMove(e) {

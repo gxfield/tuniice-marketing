@@ -14,10 +14,13 @@ const { accent = 'primary', muted = false } = Astro.props;
 
 <style>
   .card {
+    --mag-x: 0px;
+    --mag-y: 0px;
     padding: var(--space-md);
     border: var(--border-width) solid var(--color-border);
     background: var(--color-bg-elevated);
     transition: transform 0.15s ease, box-shadow 0.15s ease;
+    will-change: transform;
   }
 
   /* Accent variants */
@@ -35,7 +38,7 @@ const { accent = 'primary', muted = false } = Astro.props;
 
   /* Hover effect */
   .card:hover {
-    transform: translate(-2px, -2px);
+    transform: translate(calc(-2px + var(--mag-x)), calc(-2px + var(--mag-y)));
   }
 
   .card-primary:hover {
@@ -67,3 +70,36 @@ const { accent = 'primary', muted = false } = Astro.props;
     }
   }
 </style>
+
+<script>
+  document.addEventListener('astro:page-load', () => {
+    // Gate: skip on touch devices or reduced-motion preference
+    const ptrFine = window.matchMedia('(pointer: fine)').matches;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!ptrFine || reducedMotion) return;
+
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach((card) => {
+      function onMove(e) {
+        const rect = card.getBoundingClientRect();
+        const cx = rect.left + rect.width / 2;
+        const cy = rect.top + rect.height / 2;
+        const dx = (e.clientX - cx) * 0.15;
+        const dy = (e.clientY - cy) * 0.15;
+        card.style.setProperty('--mag-x', `${dx}px`);
+        card.style.setProperty('--mag-y', `${dy}px`);
+      }
+
+      card.addEventListener('mouseenter', () => {
+        card.addEventListener('mousemove', onMove);
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.removeEventListener('mousemove', onMove);
+        card.style.setProperty('--mag-x', '0px');
+        card.style.setProperty('--mag-y', '0px');
+      });
+    });
+  });
+</script>
