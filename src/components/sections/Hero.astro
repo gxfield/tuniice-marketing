@@ -1,14 +1,17 @@
 ---
+import CanvasBackground from '../canvas/CanvasBackground.astro';
 // Hero section with brand name and tagline
 ---
 
 <section class="hero">
+  <CanvasBackground />
   <h1 class="brand">tuniice</h1>
   <p class="tagline">music. software.</p>
 </section>
 
 <style>
   .hero {
+    position: relative;
     min-height: 70vh;
     display: flex;
     flex-direction: column;
@@ -27,6 +30,7 @@
     line-height: 1;
     letter-spacing: -0.02em;
     text-transform: lowercase;
+    z-index: 1;
   }
 
   .tagline {
@@ -34,5 +38,6 @@
     font-size: clamp(0.95rem, 2vw, 1.35rem);
     color: var(--color-text-muted);
     letter-spacing: 0.15em;
+    z-index: 1;
   }
 </style>
