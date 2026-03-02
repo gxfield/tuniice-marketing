@@ -23,8 +23,8 @@ Requirements for v1.1 UI Candy & Subdomains. Each maps to roadmap phases.
 
 ### Interactive Effects
 
-- [ ] **FX-01**: User sees glitch text animation on hero headline
-- [ ] **FX-02**: User sees SVG feTurbulence hover distortion effect on product cards
+- [x] **FX-01**: User sees glitch text animation on hero headline
+- [x] **FX-02**: User sees SVG feTurbulence hover distortion effect on product cards
 - [ ] **FX-03**: User sees magnetic pull/glow hover effect on interactive buttons
 - [ ] **FX-04**: All effects respect `prefers-reduced-motion` and `(pointer: fine)` where applicable
 
@@ -78,8 +78,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | ANIM-03 | Phase 8 | Complete |
 | ANIM-04 | Phase 8 | Complete |
 | ANIM-05 | Phase 8 | Complete |
-| FX-01 | Phase 9 | Pending |
-| FX-02 | Phase 9 | Pending |
+| FX-01 | Phase 9 | Complete |
+| FX-02 | Phase 9 | Complete |
 | FX-03 | Phase 9 | Pending |
 | FX-04 | Phase 9 | Pending |
 | SUB-01 | Phase 10 | Pending |

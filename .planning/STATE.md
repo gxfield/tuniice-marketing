@@ -3,12 +3,12 @@ gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: UI Candy & Subdomains
 status: unknown
-last_updated: "2026-03-02T22:07:29.240Z"
+last_updated: "2026-03-02T22:32:46Z"
 progress:
   total_phases: 2
   completed_phases: 2
-  total_plans: 4
-  completed_plans: 4
+  total_plans: 5
+  completed_plans: 5
 ---
 
 # Project State
@@ -18,16 +18,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-01)
 
 **Core value:** The site must establish tuniice as a credible, distinctive brand that makes visitors want to follow what's coming next.
-**Current focus:** Phase 8 — Canvas Animated Background
+**Current focus:** Phase 9 — CSS Interactive Effects
 
 ## Current Position
 
-Phase: 8 of 10 ([Phase 8: Canvas Animated Background])
-Plan: 2 of 2 in current phase
+Phase: 9 of 10 ([Phase 9: CSS Interactive Effects])
+Plan: 1 of 1 in current phase
 Status: Phase complete
-Last activity: 2026-03-02 — Completed 08-02 (visibility pause/resume via Page Visibility API + IntersectionObserver, prefers-reduced-motion fallback)
+Last activity: 2026-03-02 — Completed 09-01 (glitch text animation on hero + SVG feTurbulence hover distortion on product cards)
 
-Progress: [███░░░░░░░] 30% (v1.1)
+Progress: [████░░░░░░] 40% (v1.1)
 
 ## Accumulated Context
 
@@ -54,6 +54,10 @@ Recent decisions affecting v1.1:
 - IntersectionObserver created inside astro:page-load (not module scope) so it observes the freshly-found canvas on each navigation
 - prefers-reduced-motion check placed first in page-load handler — hides canvas and returns before any observers or RAF set up
 - Double-start guard (if rafId !== null return) in startLoop() prevents RAF loop stacking when visibility and intersection events fire together
+- Glitch pseudo-elements in effects.css (global) not Hero scoped style — ensures reduced-motion override applies without Astro scoping interference
+- overflow: hidden on .brand prevents ±2px pseudo-element offsets from causing horizontal scrollbar
+- SVG feTurbulence filter applied to .product-image (not .card) to avoid conflict with Card.astro's card-muted filter property
+- Hover trigger on .product-image:hover directly — simpler than cross-component .card:hover .product-image
 
 ### Pending Todos
 
@@ -66,5 +70,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-03-02
-Stopped at: Completed 08-02-PLAN.md (Phase 08 fully complete — both plans done)
+Stopped at: Completed 09-01-PLAN.md (Phase 09 fully complete — glitch + turbulence effects done)
 Resume file: None
