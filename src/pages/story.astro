@@ -4,11 +4,24 @@ import StoryHero from '../components/sections/StoryHero.astro';
 import Narrative from '../components/sections/Narrative.astro';
 import MusicEmbeds from '../components/sections/MusicEmbeds.astro';
 import Connect from '../components/sections/Connect.astro';
+
+const storyTransition = {
+  forwards: {
+    old: { name: 'story-out', duration: '0.4s', easing: 'cubic-bezier(0.4, 0, 1, 1)', fillMode: 'both' },
+    new: { name: 'story-in', duration: '0.4s', easing: 'cubic-bezier(0, 0, 0.2, 1)', fillMode: 'both', delay: '0.4s' }
+  },
+  backwards: {
+    old: { name: 'story-out', duration: '0.4s', easing: 'cubic-bezier(0.4, 0, 1, 1)', fillMode: 'both' },
+    new: { name: 'story-in', duration: '0.4s', easing: 'cubic-bezier(0, 0, 0.2, 1)', fillMode: 'both', delay: '0.4s' }
+  }
+};
 ---
 
 <BaseLayout title="Story">
-  <StoryHero />
-  <Narrative />
-  <MusicEmbeds />
-  <Connect />
+  <div transition:animate={storyTransition}>
+    <StoryHero />
+    <Narrative />
+    <MusicEmbeds />
+    <Connect />
+  </div>
 </BaseLayout>
