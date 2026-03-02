@@ -76,11 +76,11 @@ Plans:
   2. Hovering a product card triggers a visible turbulence/distortion effect on the card
   3. Hovering a primary button produces a magnetic pull or glow effect
   4. With `prefers-reduced-motion: reduce` set, all three effects are absent or replaced with a simple opacity change; effects are absent on touch devices (`pointer: coarse`)
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 09-01: Glitch text keyframes on hero headline and SVG feTurbulence filter for product card hover
-- [ ] 09-02: Magnetic/glow hover effect on buttons and reduced-motion / pointer gating for all effects
+- [ ] 09-01-PLAN.md — Glitch text CSS keyframes on hero headline and SVG feTurbulence hover filter for product card images
+- [ ] 09-02-PLAN.md — Magnetic cursor-follow on primary buttons and reduced-motion/pointer gating for all effects
 
 ### Phase 10: Subdomain Infrastructure
 **Goal**: bluepriint.tuniice.com resolves to a live Astro site with the shared design system and its own accent color
