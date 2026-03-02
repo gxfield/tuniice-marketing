@@ -2,13 +2,13 @@
 gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: UI Candy & Subdomains
-status: ready_to_plan
-last_updated: "2026-03-01T00:00:00.000Z"
+status: in_progress
+last_updated: "2026-03-02T05:33:23Z"
 progress:
   total_phases: 4
   completed_phases: 0
   total_plans: 8
-  completed_plans: 0
+  completed_plans: 1
 ---
 
 # Project State
@@ -23,11 +23,11 @@ See: .planning/PROJECT.md (updated 2026-03-01)
 ## Current Position
 
 Phase: 7 of 10 ([Phase 7: Page Transitions])
-Plan: 0 of 2 in current phase
-Status: Ready to plan
-Last activity: 2026-03-01 — Roadmap created for v1.1
+Plan: 1 of 2 in current phase
+Status: In progress
+Last activity: 2026-03-02 — Completed 07-01 (fade transitions, tokens, scroll reset)
 
-Progress: [░░░░░░░░░░] 0% (v1.1)
+Progress: [█░░░░░░░░░] 12% (v1.1)
 
 ## Accumulated Context
 
@@ -41,6 +41,10 @@ Recent decisions affecting v1.1:
 - Pure CSS + vanilla JS for glitch and hover effects — zero dependencies
 - Separate Vercel project for bluepriint subdomain — no monorepo tooling needed
 - Skip custom cursor replacement — magnetic hover effects achieve same brand energy without accessibility cost
+- Transition animation objects hardcode resolved values (e.g., '0.3s') — CSS custom properties cannot be used as JS string values; tokens.css serves as canonical documentation
+- Sequential fade delay: new page enter delay (0.3s) matches old page exit duration for clean exit-to-dark gap
+- All 8 keyframes (fade, slide, scale) pre-defined in Plan 01 BaseLayout so Plan 02 page files need no BaseLayout changes
+- observer.unobserve removed — data-animate elements replay on every page visit, aligning with intent
 
 ### Pending Todos
 
@@ -52,6 +56,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-01
-Stopped at: Roadmap created — ready to plan Phase 7
+Last session: 2026-03-02
+Stopped at: Completed 07-01-PLAN.md
 Resume file: None
