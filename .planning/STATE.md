@@ -3,7 +3,7 @@ gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: UI Candy & Subdomains
 status: unknown
-last_updated: "2026-03-02T05:44:11.275Z"
+last_updated: "2026-03-02T08:00:00Z"
 progress:
   total_phases: 1
   completed_phases: 1
@@ -23,9 +23,9 @@ See: .planning/PROJECT.md (updated 2026-03-01)
 ## Current Position
 
 Phase: 8 of 10 ([Phase 8: Canvas Animated Background])
-Plan: 1 of 1 in current phase
+Plan: 2 of 2 in current phase
 Status: Phase complete
-Last activity: 2026-03-01 — Completed 08-01 (particle field canvas in hero, lifecycle-safe RAF, HiDPI scaling)
+Last activity: 2026-03-02 — Completed 08-02 (visibility pause/resume via Page Visibility API + IntersectionObserver, prefers-reduced-motion fallback)
 
 Progress: [███░░░░░░░] 30% (v1.1)
 
@@ -51,6 +51,9 @@ Recent decisions affecting v1.1:
 - Canvas lifecycle: module-level rafId + astro:before-swap cancel + astro:page-load restart — prevents RAF stacking across navigations
 - visibilitychange and ResizeObserver listeners at module scope (not inside astro:page-load) — avoids listener stacking
 - DPR capped at 2x for GPU memory control on ultra-dense displays
+- IntersectionObserver created inside astro:page-load (not module scope) so it observes the freshly-found canvas on each navigation
+- prefers-reduced-motion check placed first in page-load handler — hides canvas and returns before any observers or RAF set up
+- Double-start guard (if rafId !== null return) in startLoop() prevents RAF loop stacking when visibility and intersection events fire together
 
 ### Pending Todos
 
@@ -62,6 +65,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-01
-Stopped at: Completed 08-01-PLAN.md (Phase 08 complete)
+Last session: 2026-03-02
+Stopped at: Completed 08-02-PLAN.md (Phase 08 fully complete — both plans done)
 Resume file: None
