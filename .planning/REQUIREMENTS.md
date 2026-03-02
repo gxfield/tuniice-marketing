@@ -70,28 +70,28 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| TRANS-01 | — | Pending |
-| TRANS-02 | — | Pending |
-| TRANS-03 | — | Pending |
-| ANIM-01 | — | Pending |
-| ANIM-02 | — | Pending |
-| ANIM-03 | — | Pending |
-| ANIM-04 | — | Pending |
-| ANIM-05 | — | Pending |
-| FX-01 | — | Pending |
-| FX-02 | — | Pending |
-| FX-03 | — | Pending |
-| FX-04 | — | Pending |
-| SUB-01 | — | Pending |
-| SUB-02 | — | Pending |
-| SUB-03 | — | Pending |
-| SUB-04 | — | Pending |
+| TRANS-01 | Phase 7 | Pending |
+| TRANS-02 | Phase 7 | Pending |
+| TRANS-03 | Phase 7 | Pending |
+| ANIM-01 | Phase 8 | Pending |
+| ANIM-02 | Phase 8 | Pending |
+| ANIM-03 | Phase 8 | Pending |
+| ANIM-04 | Phase 8 | Pending |
+| ANIM-05 | Phase 8 | Pending |
+| FX-01 | Phase 9 | Pending |
+| FX-02 | Phase 9 | Pending |
+| FX-03 | Phase 9 | Pending |
+| FX-04 | Phase 9 | Pending |
+| SUB-01 | Phase 10 | Pending |
+| SUB-02 | Phase 10 | Pending |
+| SUB-03 | Phase 10 | Pending |
+| SUB-04 | Phase 10 | Pending |
 
 **Coverage:**
 - v1.1 requirements: 16 total
-- Mapped to phases: 0
-- Unmapped: 16
+- Mapped to phases: 16
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-01*
-*Last updated: 2026-03-01 after initial definition*
+*Last updated: 2026-03-01 after roadmap creation*
