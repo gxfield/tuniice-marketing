@@ -15,6 +15,7 @@
   let ctx: CanvasRenderingContext2D | null = null;
   let particles: Array<{ x: number; y: number; vx: number; vy: number; r: number }> = [];
   let resizeObserver: ResizeObserver | null = null;
+  let intersectionObserver: IntersectionObserver | null = null;
 
   // ---- Lifecycle: tear down before DOM swap ----
 
@@ -23,6 +24,10 @@
     rafId = null;
     if (resizeObserver && canvas) {
       resizeObserver.unobserve(canvas);
+    }
+    if (intersectionObserver && canvas) {
+      intersectionObserver.unobserve(canvas);
+      intersectionObserver = null;
     }
   });
 
@@ -45,7 +50,17 @@
     setupResizeObserver();
     resizeCanvas();
     initParticles();
-    startLoop();
+
+    // Pause/resume based on viewport visibility
+    intersectionObserver = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        if (rafId === null) startLoop();
+      } else {
+        cancelAnimationFrame(rafId!);
+        rafId = null;
+      }
+    }, { threshold: 0 });
+    intersectionObserver.observe(canvas);
   });
 
   // ---- Tab visibility: pause when hidden ----
@@ -103,6 +118,7 @@
   // ---- Animation loop ----
 
   function startLoop() {
+    if (rafId !== null) return; // Prevent double-start from multiple pause/resume sources
     if (!canvas || !ctx) return;
     const w = canvas.getBoundingClientRect().width;
     const h = canvas.getBoundingClientRect().height;
