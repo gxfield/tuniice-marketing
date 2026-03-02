@@ -64,8 +64,8 @@ Plans:
 **Plans**: TBD
 
 Plans:
-- [ ] 08-01: Build CanvasBackground.astro with particle loop, lifecycle hooks, and ResizeObserver/DPR sizing
-- [ ] 08-02: Add visibility pause (Page Visibility API), prefers-reduced-motion fallback, and integrate into BaseLayout
+- [ ] 08-01: CanvasBackground.astro particle system with RAF lifecycle, HiDPI sizing, and Hero integration
+- [ ] 08-02: Visibility pause (tab + scroll), prefers-reduced-motion fallback, and visual verification
 
 ### Phase 9: CSS Interactive Effects
 **Goal**: Users see glitch text on the hero headline and hover distortion on product cards and buttons
