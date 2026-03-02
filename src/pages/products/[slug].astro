@@ -17,10 +17,21 @@ interface Props {
 }
 
 const { product } = Astro.props;
+
+const slideTransition = {
+  forwards: {
+    old: { name: 'slide-out-left', duration: '0.3s', easing: 'cubic-bezier(0.4, 0, 1, 1)', fillMode: 'both' },
+    new: { name: 'slide-in-right', duration: '0.3s', easing: 'cubic-bezier(0, 0, 0.2, 1)', fillMode: 'both', delay: '0.3s' }
+  },
+  backwards: {
+    old: { name: 'slide-out-right', duration: '0.3s', easing: 'cubic-bezier(0.4, 0, 1, 1)', fillMode: 'both' },
+    new: { name: 'slide-in-left', duration: '0.3s', easing: 'cubic-bezier(0, 0, 0.2, 1)', fillMode: 'both', delay: '0.3s' }
+  }
+};
 ---
 
 <BaseLayout title={product.name}>
-  <div class="product-detail">
+  <div class="product-detail" transition:animate={slideTransition}>
     <nav class="back-nav">
       <a href="/products" class="back-link">← Back to Products</a>
     </nav>
