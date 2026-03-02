@@ -45,11 +45,11 @@ Full details: `.planning/milestones/v1.0-ROADMAP.md`
   2. Product detail pages use a distinct transition style (e.g., slide) that differs from the default fade
   3. Story page uses a distinct transition style (e.g., morph/scale) that differs from the default fade
   4. Transition duration is controlled by a single CSS custom property (e.g., `--transition-duration`) referenced by all keyframes
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 07-01: Extend ClientRouter with fade transition and per-page transition:animate directives
-- [ ] 07-02: Add per-page transition styles (slide for products, morph for story) and define timing token
+- [ ] 07-01: Default sequential fade transition, global keyframes, timing tokens, scroll reset, animation replay
+- [ ] 07-02: Per-page transition overrides (slide for product detail, scale for story) and visual verification
 
 ### Phase 8: Canvas Animated Background
 **Goal**: Users see a live particle field in the hero section that starts and stops cleanly with navigation
