@@ -3,7 +3,7 @@ gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: UI Candy & Subdomains
 status: unknown
-last_updated: "2026-03-02T22:32:46Z"
+last_updated: "2026-03-02T22:40:00Z"
 progress:
   total_phases: 2
   completed_phases: 2
@@ -23,9 +23,9 @@ See: .planning/PROJECT.md (updated 2026-03-01)
 ## Current Position
 
 Phase: 9 of 10 ([Phase 9: CSS Interactive Effects])
-Plan: 1 of 1 in current phase
+Plan: 2 of 2 in current phase
 Status: Phase complete
-Last activity: 2026-03-02 — Completed 09-01 (glitch text animation on hero + SVG feTurbulence hover distortion on product cards)
+Last activity: 2026-03-02 — Completed 09-02 (magnetic cursor-follow effect on primary buttons with dual accessibility gating)
 
 Progress: [████░░░░░░] 40% (v1.1)
 
@@ -58,6 +58,9 @@ Recent decisions affecting v1.1:
 - overflow: hidden on .brand prevents ±2px pseudo-element offsets from causing horizontal scrollbar
 - SVG feTurbulence filter applied to .product-image (not .card) to avoid conflict with Card.astro's card-muted filter property
 - Hover trigger on .product-image:hover directly — simpler than cross-component .card:hover .product-image
+- Magnetic CSS custom property composition on .btn-primary (not .btn) — secondary buttons retain unmodified translate(-2px,-2px) hover lift
+- --mag-x/--mag-y default to 0px — calc() produces standard hover offset if JS doesn't run; no CSS-level gating needed for magnetic
+- Scoped mousemove: attach listener on mouseenter, remove on mouseleave — no global listener, no stacking across navigations
 
 ### Pending Todos
 
@@ -70,5 +73,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-03-02
-Stopped at: Completed 09-01-PLAN.md (Phase 09 fully complete — glitch + turbulence effects done)
+Stopped at: Completed 09-02-PLAN.md (Phase 09 fully complete — glitch + turbulence + magnetic button effects done)
 Resume file: None

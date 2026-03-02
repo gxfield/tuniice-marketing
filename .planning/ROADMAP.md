@@ -31,7 +31,7 @@ Full details: `.planning/milestones/v1.0-ROADMAP.md`
 
 - [x] **Phase 7: Page Transitions** - Smooth ClientRouter transitions between all pages with per-page styles
 - [x] **Phase 8: Canvas Animated Background** - Particle field hero animation with lifecycle-safe RAF management (completed 2026-03-02)
-- [ ] **Phase 9: CSS Interactive Effects** - Glitch text, hover distortion, and magnetic button effects
+- [x] **Phase 9: CSS Interactive Effects** - Glitch text, hover distortion, and magnetic button effects (completed 2026-03-02)
 - [ ] **Phase 10: Subdomain Infrastructure** - bluepriint.tuniice.com live with shared design system
 
 ## Phase Details
@@ -111,5 +111,5 @@ Plans:
 | 4. About & Music | v1.0 | 2/2 | Complete | 2026-01-29 |
 | 7. Page Transitions | v1.1 | 2/2 | Complete | 2026-03-02 |
 | 8. Canvas Animated Background | 2/2 | Complete   | 2026-03-02 | - |
-| 9. CSS Interactive Effects | 1/2 | In Progress|  | - |
+| 9. CSS Interactive Effects | 2/2 | Complete   | 2026-03-02 | - |
 | 10. Subdomain Infrastructure | v1.1 | 0/2 | Not started | - |
