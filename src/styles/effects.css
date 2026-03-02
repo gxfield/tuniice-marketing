@@ -1,11 +1,12 @@
 /* Phase 9: Interactive Effects
  * Gating strategy:
  * - Glitch text:  CSS @media (prefers-reduced-motion: reduce) -> display: none on pseudo-elements
- * - Turbulence:   CSS @media (pointer: fine) and (prefers-reduced-motion: no-preference) -> filter on hover
+ * - Glitch image: CSS @media (pointer: fine) and (prefers-reduced-motion: no-preference) -> animation on hover
  * - Magnetic btn: JS matchMedia checks for (pointer: fine) + (prefers-reduced-motion: reduce) -> skip setup
+ * - Magnetic card: JS matchMedia checks for (pointer: fine) + (prefers-reduced-motion: reduce) -> skip setup
  */
 
-/* Interactive CSS effects: glitch text animation and turbulence hover */
+/* Interactive CSS effects: glitch text animation and product image glitch hover */
 
 /* ─── Glitch keyframes ─────────────────────────────────────────────────── */
 
@@ -75,6 +76,76 @@
 @media (prefers-reduced-motion: reduce) {
   .brand::before,
   .brand::after {
+    display: none;
+  }
+}
+
+/* ─── Product image glitch keyframes ───────────────────────────────────── */
+
+/* ::before layer (green) — horizontal clip-path slices burst */
+@keyframes glitch-image-before {
+  0%   { clip-path: inset(0 0 100% 0); opacity: 0; }
+  10%  { clip-path: inset(20% 0 55% 0); transform: translate(3px, 0); opacity: 0.4; }
+  30%  { clip-path: inset(60% 0 15% 0); transform: translate(-3px, 2px); opacity: 0.35; }
+  50%  { clip-path: inset(10% 0 70% 0); transform: translate(4px, -2px); opacity: 0.4; }
+  70%  { clip-path: inset(40% 0 30% 0); transform: translate(-2px, 1px); opacity: 0.3; }
+  90%  { clip-path: inset(0 0 100% 0); opacity: 0; }
+  100% { clip-path: inset(0 0 100% 0); opacity: 0; }
+}
+
+/* ::after layer (orange) — offset timing and different clip values */
+@keyframes glitch-image-after {
+  0%   { clip-path: inset(0 0 100% 0); opacity: 0; }
+  10%  { clip-path: inset(50% 0 20% 0); transform: translate(-4px, 0); opacity: 0.35; }
+  35%  { clip-path: inset(15% 0 60% 0); transform: translate(3px, -2px); opacity: 0.4; }
+  55%  { clip-path: inset(70% 0 10% 0); transform: translate(-3px, 3px); opacity: 0.3; }
+  75%  { clip-path: inset(30% 0 45% 0); transform: translate(2px, -1px); opacity: 0.35; }
+  90%  { clip-path: inset(0 0 100% 0); opacity: 0; }
+  100% { clip-path: inset(0 0 100% 0); opacity: 0; }
+}
+
+/* ─── Product image glitch pseudo-elements ─────────────────────────────── */
+
+.product-image {
+  position: relative;
+}
+
+.product-image::before,
+.product-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  mix-blend-mode: screen;
+}
+
+.product-image::before {
+  background: var(--color-accent); /* green */
+}
+
+.product-image::after {
+  background: var(--color-accent-warm); /* orange */
+}
+
+/* Hover trigger — gated for pointer:fine + no-preference */
+@media (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .product-image:hover::before {
+    animation: glitch-image-before 0.3s steps(1) forwards;
+  }
+
+  .product-image:hover::after {
+    animation: glitch-image-after 0.3s steps(1) 0.05s forwards;
+  }
+}
+
+/* Reduced-motion: disable product image glitch */
+@media (prefers-reduced-motion: reduce) {
+  .product-image::before,
+  .product-image::after {
     display: none;
   }
 }
