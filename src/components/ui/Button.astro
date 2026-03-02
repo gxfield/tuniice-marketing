@@ -35,7 +35,10 @@ const Tag = href ? 'a' : 'button';
 
   /* Variant styles */
   .btn-primary {
+    --mag-x: 0px;
+    --mag-y: 0px;
     box-shadow: var(--shadow-offset-md) var(--shadow-offset-md) 0 var(--color-accent);
+    will-change: transform;
   }
 
   .btn-secondary {
@@ -66,6 +69,7 @@ const Tag = href ? 'a' : 'button';
 
   .btn-primary:hover,
   .btn-primary:focus-visible {
+    transform: translate(calc(-2px + var(--mag-x)), calc(-2px + var(--mag-y)));
     box-shadow: var(--shadow-offset-lg) var(--shadow-offset-lg) 0 var(--color-accent);
   }
 
@@ -87,3 +91,36 @@ const Tag = href ? 'a' : 'button';
     box-shadow: var(--shadow-offset-sm) var(--shadow-offset-sm) 0 var(--color-accent-warm);
   }
 </style>
+
+<script>
+  document.addEventListener('astro:page-load', () => {
+    // Gate: skip on touch devices or reduced-motion preference
+    const ptrFine = window.matchMedia('(pointer: fine)').matches;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!ptrFine || reducedMotion) return;
+
+    const buttons = document.querySelectorAll('.btn-primary');
+
+    buttons.forEach((btn) => {
+      function onMove(e) {
+        const rect = btn.getBoundingClientRect();
+        const cx = rect.left + rect.width / 2;
+        const cy = rect.top + rect.height / 2;
+        const dx = (e.clientX - cx) * 0.25;
+        const dy = (e.clientY - cy) * 0.25;
+        btn.style.setProperty('--mag-x', `${dx}px`);
+        btn.style.setProperty('--mag-y', `${dy}px`);
+      }
+
+      btn.addEventListener('mouseenter', () => {
+        btn.addEventListener('mousemove', onMove);
+      });
+
+      btn.addEventListener('mouseleave', () => {
+        btn.removeEventListener('mousemove', onMove);
+        btn.style.setProperty('--mag-x', '0px');
+        btn.style.setProperty('--mag-y', '0px');
+      });
+    });
+  });
+</script>
