@@ -25,7 +25,7 @@ See: .planning/PROJECT.md (updated 2026-03-01)
 Phase: 9 of 10 ([Phase 9: CSS Interactive Effects])
 Plan: 2 of 2 in current phase
 Status: Phase complete
-Last activity: 2026-03-02 — Completed 09-02 (magnetic cursor-follow effect on primary buttons with dual accessibility gating)
+Last activity: 2026-03-02 - Completed quick task 1: Replace product card turbulence with glitch effect and extend magnetic cursor-follow to secondary buttons and product cards
 
 Progress: [████░░░░░░] 40% (v1.1)
 
@@ -69,6 +69,12 @@ None.
 ### Blockers/Concerns
 
 - [Phase 10]: Bluepriint content dependency — product copy, tagline, and feature list needed before subdomain can launch; placeholder content sufficient to unblock build but real content needed before promoting
+
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 1 | Replace product card turbulence with glitch effect and extend magnetic cursor-follow to secondary buttons and product cards | 2026-03-02 | 2c167bb | [1-replace-product-card-turbulence-with-gli](./quick/1-replace-product-card-turbulence-with-gli/) |
 
 ## Session Continuity
 
