@@ -10,7 +10,7 @@ Requirements for v1.1 UI Candy & Subdomains. Each maps to roadmap phases.
 ### Page Transitions
 
 - [x] **TRANS-01**: User sees smooth fade transition when navigating between any pages
-- [ ] **TRANS-02**: User sees distinct transition styles per page type (e.g., slide for products, morph for story)
+- [x] **TRANS-02**: User sees distinct transition styles per page type (e.g., slide for products, morph for story)
 - [x] **TRANS-03**: Transition timing is defined as CSS custom property for consistent feel across site
 
 ### Animated Backgrounds
@@ -71,7 +71,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | TRANS-01 | Phase 7 | Complete |
-| TRANS-02 | Phase 7 | Pending |
+| TRANS-02 | Phase 7 | Complete |
 | TRANS-03 | Phase 7 | Complete |
 | ANIM-01 | Phase 8 | Pending |
 | ANIM-02 | Phase 8 | Pending |

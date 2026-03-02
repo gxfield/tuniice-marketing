@@ -29,7 +29,7 @@ Full details: `.planning/milestones/v1.0-ROADMAP.md`
 
 **Milestone Goal:** Add bold visual effects and subdomain infrastructure to make the site feel alive and establish the pattern for per-app mini-sites.
 
-- [ ] **Phase 7: Page Transitions** - Smooth ClientRouter transitions between all pages with per-page styles
+- [x] **Phase 7: Page Transitions** - Smooth ClientRouter transitions between all pages with per-page styles
 - [ ] **Phase 8: Canvas Animated Background** - Particle field hero animation with lifecycle-safe RAF management
 - [ ] **Phase 9: CSS Interactive Effects** - Glitch text, hover distortion, and magnetic button effects
 - [ ] **Phase 10: Subdomain Infrastructure** - bluepriint.tuniice.com live with shared design system
@@ -48,8 +48,8 @@ Full details: `.planning/milestones/v1.0-ROADMAP.md`
 **Plans**: 2 plans
 
 Plans:
-- [ ] 07-01: Default sequential fade transition, global keyframes, timing tokens, scroll reset, animation replay
-- [ ] 07-02: Per-page transition overrides (slide for product detail, scale for story) and visual verification
+- [x] 07-01: Default sequential fade transition, global keyframes, timing tokens, scroll reset, animation replay
+- [x] 07-02: Per-page transition overrides (slide for product detail, scale for story) and visual verification
 
 ### Phase 8: Canvas Animated Background
 **Goal**: Users see a live particle field in the hero section that starts and stops cleanly with navigation
@@ -109,7 +109,7 @@ Plans:
 | 2. Home & Core Content | v1.0 | 2/2 | Complete | 2026-01-29 |
 | 3. Products Showcase | v1.0 | 2/2 | Complete | 2026-01-29 |
 | 4. About & Music | v1.0 | 2/2 | Complete | 2026-01-29 |
-| 7. Page Transitions | 1/2 | In Progress|  | - |
+| 7. Page Transitions | v1.1 | 2/2 | Complete | 2026-03-02 |
 | 8. Canvas Animated Background | v1.1 | 0/2 | Not started | - |
 | 9. CSS Interactive Effects | v1.1 | 0/2 | Not started | - |
 | 10. Subdomain Infrastructure | v1.1 | 0/2 | Not started | - |

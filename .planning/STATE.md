@@ -3,12 +3,12 @@ gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: UI Candy & Subdomains
 status: in_progress
-last_updated: "2026-03-02T05:33:23Z"
+last_updated: "2026-03-02T06:00:00Z"
 progress:
   total_phases: 4
   completed_phases: 0
   total_plans: 8
-  completed_plans: 1
+  completed_plans: 2
 ---
 
 # Project State
@@ -23,11 +23,11 @@ See: .planning/PROJECT.md (updated 2026-03-01)
 ## Current Position
 
 Phase: 7 of 10 ([Phase 7: Page Transitions])
-Plan: 1 of 2 in current phase
-Status: In progress
-Last activity: 2026-03-02 — Completed 07-01 (fade transitions, tokens, scroll reset)
+Plan: 2 of 2 in current phase
+Status: Phase complete
+Last activity: 2026-03-02 — Completed 07-02 (slide transition on product detail, scale/zoom on story)
 
-Progress: [█░░░░░░░░░] 12% (v1.1)
+Progress: [██░░░░░░░░] 25% (v1.1)
 
 ## Accumulated Context
 
@@ -45,6 +45,9 @@ Recent decisions affecting v1.1:
 - Sequential fade delay: new page enter delay (0.3s) matches old page exit duration for clean exit-to-dark gap
 - All 8 keyframes (fade, slide, scale) pre-defined in Plan 01 BaseLayout so Plan 02 page files need no BaseLayout changes
 - observer.unobserve removed — data-animate elements replay on every page visit, aligning with intent
+- Product detail slide uses directional reversal: forwards=slide-in-right, backwards=slide-in-left (spatial drill-down metaphor)
+- Story scale/zoom uses same animation forwards and backwards — no directional axis on scale
+- Story transition 800ms total (400ms+400ms) vs default 600ms — contemplative feel for that page
 
 ### Pending Todos
 
@@ -57,5 +60,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-03-02
-Stopped at: Completed 07-01-PLAN.md
+Stopped at: Completed 07-02-PLAN.md (Phase 07 complete)
 Resume file: None
