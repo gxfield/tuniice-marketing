@@ -10,6 +10,15 @@ interface Props {
 const { product } = Astro.props;
 ---
 
+<svg width="0" height="0" style="position: absolute;" aria-hidden="true">
+  <defs>
+    <filter id="card-warp" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015 0.02" numOctaves="2" seed="5" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+</svg>
+
 <Card accent={product.accent} muted={true}>
   <div class="product-card">
     <div class="product-image">
@@ -37,6 +46,13 @@ const { product } = Astro.props;
     width: 100%;
     aspect-ratio: 4 / 3;
     overflow: hidden;
+    transition: filter 0.2s ease;
+  }
+
+  @media (pointer: fine) and (prefers-reduced-motion: no-preference) {
+    .product-image:hover {
+      filter: url(#card-warp);
+    }
   }
 
   .product-image img {
