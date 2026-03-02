@@ -10,13 +10,16 @@ import Avatar from '../ui/Avatar.astro';
 
   <div class="story-text" data-animate>
     <p>
-      I'm Greg, a musician and software engineer who's spent years bridging the creative and technical worlds. tuniice isn't just a brand—it's the intersection of everything I've learned about making tools that feel as natural as playing an instrument.
+      tuniice is a convergence of two decades of electronic composition and fifteen years of software engineering.
     </p>
     <p>
-      From iOS apps to embedded hardware, audio DSP to web platforms, my mission is to build products that remove friction between intention and creation. Whether it's a synthesizer, a productivity tool, or a MIDI controller, every project starts with one question: does this feel right?
+      It is a project born from necessity—a maker’s workshop dedicated to tools that dissolve the barrier between the musician’s mind and the speaker cone.
     </p>
     <p>
-      This site showcases that philosophy in action. Simple, direct, and built to last. No unnecessary complexity. Just tools and music that work the way they should.
+      Here, code is treated with the same reverence as audio. The apps built here are not just utilities; they are instruments, refined by years of listening.
+    </p>
+    <p>
+      Pure signal. Zero noise.
     </p>
   </div>
 
@@ -29,14 +32,6 @@ import Avatar from '../ui/Avatar.astro';
           <li>iOS Development</li>
           <li>Web Applications</li>
           <li>Audio DSP</li>
-        </ul>
-      </div>
-      <div class="skill-category" data-animate>
-        <h3 class="category-title">Hardware</h3>
-        <ul class="skill-list">
-          <li>Circuit Design</li>
-          <li>MIDI Controllers</li>
-          <li>Embedded Systems</li>
         </ul>
       </div>
       <div class="skill-category" data-animate>
@@ -53,9 +48,9 @@ import Avatar from '../ui/Avatar.astro';
 
 <style>
   .narrative {
-    padding: var(--space-2xl) var(--space-md);
-    max-width: 800px;
-    margin: 0 auto;
+    padding: var(--space-xl) 0;
+    max-width: 900px;
+    margin: 0;
   }
 
   .avatar-container {
@@ -67,9 +62,9 @@ import Avatar from '../ui/Avatar.astro';
   .story-text {
     font-family: var(--font-body);
     font-size: var(--font-base);
-    line-height: 1.8;
+    line-height: 1.6;
     color: var(--color-text);
-    margin-bottom: var(--space-2xl);
+    margin-bottom: var(--space-xl);
   }
 
   .story-text p {
@@ -88,23 +83,23 @@ import Avatar from '../ui/Avatar.astro';
     font-family: var(--font-heading);
     font-size: var(--font-2xl);
     font-weight: 900;
-    text-align: center;
-    margin-bottom: var(--space-xl);
+    text-align: left;
+    margin-bottom: var(--space-lg);
   }
 
   .skills-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--space-lg);
+    gap: var(--space-md);
   }
 
   @media (min-width: 768px) {
     .narrative {
-      padding: var(--space-2xl) var(--space-lg);
+      padding: var(--space-xl) 0;
     }
 
     .skills-grid {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 

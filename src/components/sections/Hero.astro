@@ -4,24 +4,24 @@
 
 <section class="hero">
   <h1 class="brand">tuniice</h1>
-  <p class="tagline">music. software. hardware.</p>
+  <p class="tagline">music. software.</p>
 </section>
 
 <style>
   .hero {
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: var(--space-xl);
-    gap: var(--space-md);
+    align-items: flex-start;
+    text-align: left;
+    padding: var(--space-lg) 0;
+    gap: var(--space-sm);
   }
 
   .brand {
     font-family: var(--font-heading);
-    font-size: clamp(3rem, 12vw, 8rem);
+    font-size: clamp(2.5rem, 8vw, 6rem);
     font-weight: 900;
     color: var(--color-text);
     line-height: 1;
@@ -31,8 +31,8 @@
 
   .tagline {
     font-family: var(--font-body);
-    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-size: clamp(0.95rem, 2vw, 1.35rem);
     color: var(--color-text-muted);
-    letter-spacing: 0.2em;
+    letter-spacing: 0.15em;
   }
 </style>

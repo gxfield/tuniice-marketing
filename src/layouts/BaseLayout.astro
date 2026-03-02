@@ -23,7 +23,7 @@ const { title } = Astro.props;
       href="https://fonts.bunny.net/css?family=space-grotesk:700,900|space-mono:400,700"
       rel="stylesheet"
     />
-    <meta name="description" content="tuniice — music, software, hardware" />
+    <meta name="description" content="tuniice — music and software" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
     <title>{title} | tuniice</title>
@@ -70,16 +70,22 @@ const { title } = Astro.props;
 
   main {
     flex: 1;
-    padding: var(--space-xl) var(--space-md);
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: var(--space-lg) var(--space-md);
+    max-width: 1400px;
+    margin: 0;
     width: 100%;
   }
 
   @media (min-width: 768px) {
     main {
-      padding: var(--space-2xl) var(--space-lg);
+      padding: var(--space-xl) var(--space-lg);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    main {
+      padding-left: var(--space-xl);
+      padding-right: var(--space-xl);
     }
   }
 </style>

@@ -14,8 +14,8 @@ import Card from '../ui/Card.astro';
     </a>
     <a href="/products" class="card-link" data-animate>
       <Card accent="secondary">
-        <h3>Hardware</h3>
-        <p>Physical devices coming soon</p>
+        <h3>Audio Software</h3>
+        <p>DSP tools and creative utilities</p>
       </Card>
     </a>
     <a href="/products" class="card-link" data-animate>
@@ -29,23 +29,23 @@ import Card from '../ui/Card.astro';
 
 <style>
   .products {
-    padding: var(--space-2xl) var(--space-md);
+    padding: var(--space-xl) 0;
   }
 
   .section-heading {
     font-family: var(--font-heading);
     font-size: var(--font-2xl);
     font-weight: 900;
-    text-align: center;
-    margin-bottom: var(--space-2xl);
+    text-align: left;
+    margin-bottom: var(--space-lg);
   }
 
   .cards-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-lg);
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+    max-width: 1400px;
+    margin: 0;
   }
 
   .card-link {

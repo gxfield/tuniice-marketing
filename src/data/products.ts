@@ -4,7 +4,7 @@ export interface Product {
   name: string;
   tagline: string;
   description: string;
-  category: 'app' | 'hardware';
+  category: 'app';
   image: string;
   status: 'coming-soon';
   accent: 'primary' | 'secondary' | 'amber';
@@ -24,17 +24,6 @@ export const products: Product[] = [
   },
   {
     id: 'prod-002',
-    slug: 'grid-controller',
-    name: 'Grid Controller',
-    tagline: 'Tactile music control',
-    description: 'Hardware MIDI controller with RGB pads and endless encoders.',
-    category: 'hardware',
-    image: '/images/products/grid-controller.svg',
-    status: 'coming-soon',
-    accent: 'secondary'
-  },
-  {
-    id: 'prod-003',
     slug: 'wave-editor',
     name: 'Wave Editor',
     tagline: 'Shape your sound',

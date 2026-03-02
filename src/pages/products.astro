@@ -14,7 +14,7 @@ import { products } from '../data/products';
 
     <header class="page-header">
       <h1 class="page-title">What's Coming</h1>
-      <p class="page-intro">Apps and hardware in development. Get notified when we launch.</p>
+      <p class="page-intro">Apps and software tools in development. Get notified when we launch.</p>
     </header>
 
     <div class="products-grid">
@@ -62,7 +62,7 @@ import { products } from '../data/products';
   }
 
   .back-nav {
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
   }
 
   .back-link {
@@ -78,8 +78,8 @@ import { products } from '../data/products';
   }
 
   .page-header {
-    text-align: center;
-    margin-bottom: var(--space-2xl);
+    text-align: left;
+    margin-bottom: var(--space-xl);
   }
 
   .page-title {
@@ -95,16 +95,14 @@ import { products } from '../data/products';
     font-size: var(--font-md);
     color: var(--color-text-muted);
     margin: 0;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 700px;
   }
 
   .products-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-lg);
-    margin-bottom: var(--space-2xl);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
   }
 
   .product-link {
@@ -114,10 +112,10 @@ import { products } from '../data/products';
   }
 
   .notify-section {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: var(--space-2xl) 0;
-    text-align: center;
+    max-width: 700px;
+    margin: 0;
+    padding: var(--space-xl) 0;
+    text-align: left;
     scroll-margin-bottom: 80px;
   }
 
@@ -167,10 +165,6 @@ import { products } from '../data/products';
   }
 
   @media (min-width: 768px) {
-    .products-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
     .sticky-cta {
       bottom: var(--space-lg);
       right: var(--space-lg);
