@@ -1,0 +1,73 @@
+/* Interactive CSS effects: glitch text animation and turbulence hover */
+
+/* ─── Glitch keyframes ─────────────────────────────────────────────────── */
+
+/* ::before layer (green) — bursts at 86%–92% of the 4s cycle */
+@keyframes glitch-before {
+  0%   { clip-path: inset(0 0 100% 0); transform: translate(2px, 0); }
+  86%  { clip-path: inset(0 0 100% 0); transform: translate(2px, 0); opacity: 0; }
+  87%  { clip-path: inset(30% 0 40% 0); transform: translate(2px, -2px); opacity: 1; }
+  88%  { clip-path: inset(55% 0 10% 0); transform: translate(2px, 2px); opacity: 1; }
+  89%  { clip-path: inset(10% 0 70% 0); transform: translate(2px, -1px); opacity: 1; }
+  90%  { clip-path: inset(60% 0 20% 0); transform: translate(2px, 3px); opacity: 1; }
+  91%  { clip-path: inset(20% 0 50% 0); transform: translate(2px, -2px); opacity: 1; }
+  92%  { clip-path: inset(0 0 100% 0); transform: translate(2px, 0); opacity: 0; }
+  100% { clip-path: inset(0 0 100% 0); transform: translate(2px, 0); opacity: 0; }
+}
+
+/* ::after layer (orange) — bursts at 88%–92%, slightly offset from ::before */
+@keyframes glitch-after {
+  0%   { clip-path: inset(0 0 100% 0); transform: translate(-2px, 0); }
+  88%  { clip-path: inset(0 0 100% 0); transform: translate(-2px, 0); opacity: 0; }
+  89%  { clip-path: inset(45% 0 25% 0); transform: translate(-2px, 2px); opacity: 1; }
+  90%  { clip-path: inset(15% 0 55% 0); transform: translate(-2px, -3px); opacity: 1; }
+  91%  { clip-path: inset(65% 0 15% 0); transform: translate(-2px, 1px); opacity: 1; }
+  92%  { clip-path: inset(0 0 100% 0); transform: translate(-2px, 0); opacity: 0; }
+  100% { clip-path: inset(0 0 100% 0); transform: translate(-2px, 0); opacity: 0; }
+}
+
+/* ─── .brand glitch pseudo-elements ───────────────────────────────────── */
+
+.brand {
+  position: relative;
+  overflow: hidden; /* prevent horizontal scroll from offset pseudo-elements */
+}
+
+.brand::before,
+.brand::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  user-select: none;
+  /* inherit typography from parent so glitch layers align exactly */
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+.brand::before {
+  color: var(--color-accent); /* green */
+  left: 2px;
+  animation: glitch-before 4s infinite steps(1);
+}
+
+.brand::after {
+  color: var(--color-accent-warm); /* orange */
+  left: -2px;
+  animation: glitch-after 4s infinite steps(1);
+}
+
+/* Reduced-motion: disable glitch entirely */
+@media (prefers-reduced-motion: reduce) {
+  .brand::before,
+  .brand::after {
+    display: none;
+  }
+}
