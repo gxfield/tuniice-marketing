@@ -41,6 +41,12 @@
   --shadow-offset-md: 4px;
   --shadow-offset-lg: 6px;
   --radius: 0;
+
+  /* Page transitions */
+  --transition-duration: 0.3s;
+  --transition-duration-story: 0.4s;
+  --transition-easing-out: cubic-bezier(0.4, 0, 1, 1);
+  --transition-easing-in: cubic-bezier(0, 0, 0.2, 1);
 }
 
 @media (prefers-color-scheme: light) {
@@ -57,5 +63,11 @@
     --color-grid: rgba(20, 20, 20, 0.14);
     --color-bg-gradient-top: rgba(255, 255, 255, 0.7);
     --color-bg-gradient-bottom: rgba(0, 0, 0, 0.04);
+
+    /* Page transitions */
+    --transition-duration: 0.3s;
+    --transition-duration-story: 0.4s;
+    --transition-easing-out: cubic-bezier(0.4, 0, 1, 1);
+    --transition-easing-in: cubic-bezier(0, 0, 0.2, 1);
   }
 }
