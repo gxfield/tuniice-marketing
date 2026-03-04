@@ -30,7 +30,7 @@ Requirements for v1.1 UI Candy & Subdomains. Each maps to roadmap phases.
 
 ### Subdomain Infrastructure
 
-- [ ] **SUB-01**: bluepriint.tuniice.com resolves to a separate Vercel project from the same repo
+- [x] **SUB-01**: bluepriint.tuniice.com resolves to a separate Vercel project from the same repo
 - [x] **SUB-02**: Bluepriint site shares the neo-brutalist design system via copied design tokens
 - [x] **SUB-03**: Bluepriint site uses its own accent color override
 - [x] **SUB-04**: Bluepriint landing page exists with placeholder content and base layout
@@ -82,7 +82,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FX-02 | Phase 9 | Complete |
 | FX-03 | Phase 9 | Complete |
 | FX-04 | Phase 9 | Complete |
-| SUB-01 | Phase 10 | Pending |
+| SUB-01 | Phase 10 | Complete |
 | SUB-02 | Phase 10 | Complete |
 | SUB-03 | Phase 10 | Complete |
 | SUB-04 | Phase 10 | Complete |

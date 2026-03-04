@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: UI Candy & Subdomains
 status: completed
-stopped_at: Completed 10-01-PLAN.md (bluepriint scaffold + landing page)
-last_updated: "2026-03-04T02:33:02.686Z"
+stopped_at: Completed 10-02-PLAN.md (bluepriint subdomain deployment)
+last_updated: "2026-03-04T03:04:56.983Z"
 last_activity: "2026-03-02 - Completed quick task 1: Replace product card turbulence with glitch effect and extend magnetic cursor-follow to secondary buttons and product cards"
 progress:
   total_phases: 4
-  completed_phases: 3
+  completed_phases: 4
   total_plans: 8
-  completed_plans: 7
+  completed_plans: 8
   percent: 40
 ---
 
@@ -67,6 +67,8 @@ Recent decisions affecting v1.1:
 - [Phase 10-subdomain-infrastructure]: bluepriint/ is fully standalone Astro project with own package.json — no monorepo tooling needed
 - [Phase 10-subdomain-infrastructure]: tokens.css forked with amber accent only — all spacing/typography/border tokens remain shared with main site
 - [Phase 10-subdomain-infrastructure]: No effects.css for bluepriint v1 — no interactive effects per user decision
+- [Phase 10-subdomain-infrastructure]: Separate Vercel project per subdomain (Root Directory = bluepriint/) — no monorepo tooling needed
+- [Phase 10-subdomain-infrastructure]: DNS CNAME record + Vercel auto-SSL = zero-config HTTPS for subdomains
 
 ### Pending Todos
 
@@ -84,6 +86,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-04T02:33:02.684Z
-Stopped at: Completed 10-01-PLAN.md (bluepriint scaffold + landing page)
+Last session: 2026-03-04T03:04:53.181Z
+Stopped at: Completed 10-02-PLAN.md (bluepriint subdomain deployment)
 Resume file: None
