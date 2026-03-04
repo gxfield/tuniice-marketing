@@ -91,11 +91,11 @@ Plans:
   2. The page uses the same neo-brutalist dark design tokens as the main site
   3. The accent color on the bluepriint page is visibly different from the main site's neon green (bluepriint amber)
   4. The page contains a base landing layout with placeholder product name, tagline, and description
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 10-01: Scaffold bluepriint/ Astro project, copy tokens.css, override accent color, create base landing page
-- [ ] 10-02: Configure separate Vercel project pointing at bluepriint/ directory and wire DNS CNAME
+- [ ] 10-01-PLAN.md — Scaffold bluepriint/ Astro project, copy tokens with amber accent override, build landing page with hero/features/CTA/footer
+- [ ] 10-02-PLAN.md — Configure separate Vercel project for bluepriint/ directory and wire DNS CNAME for bluepriint.tuniice.com
 
 ## Progress
 
