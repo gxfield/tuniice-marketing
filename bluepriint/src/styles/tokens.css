@@ -1,16 +1,16 @@
 :root {
   color-scheme: dark;
   /* Colors */
-  --color-bg: #0a0a0a;
-  --color-bg-elevated: #141414;
+  --color-bg: #0A1628;
+  --color-bg-elevated: #111f36;
   --color-text: #ffffff;
-  --color-text-muted: #a0a0a0;
-  --color-accent: #ffbf00;
-  --color-accent-warm: #ff6b35;
-  --color-accent-amber: #ffbf00;
+  --color-text-muted: #8a9bb5;
+  --color-accent: #d8ff4d;
+  --color-accent-warm: #d8ff4d;
+  --color-accent-amber: #d8ff4d;
   --color-border: #ffffff;
   --color-grid: rgba(255, 255, 255, 0.04);
-  --color-bg-gradient-top: rgba(255, 255, 255, 0.02);
+  --color-bg-gradient-top: rgba(216, 255, 77, 0.02);
   --color-bg-gradient-bottom: rgba(0, 0, 0, 0.2);
 
   /* Typography */
@@ -56,9 +56,9 @@
     --color-bg-elevated: #ffffff;
     --color-text: #141414;
     --color-text-muted: #5b5b5b;
-    --color-accent: #b98300;
-    --color-accent-warm: #d4551f;
-    --color-accent-amber: #b98300;
+    --color-accent: #6b8a00;
+    --color-accent-warm: #6b8a00;
+    --color-accent-amber: #6b8a00;
     --color-border: #141414;
     --color-grid: rgba(20, 20, 20, 0.14);
     --color-bg-gradient-top: rgba(255, 255, 255, 0.7);
