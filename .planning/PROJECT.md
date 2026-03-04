@@ -2,7 +2,7 @@
 
 ## What This Is
 
-A marketing site for the tuniice brand — a creative studio at the intersection of music production and software engineering. The site showcases upcoming iOS apps, hardware devices, and web-based products, while soft-promoting music and art via Bandcamp and SoundCloud. Built with a neo-brutalist dark mode design system on Astro, deployed to Vercel as a fully static site.
+A marketing site for the tuniice brand — a creative studio at the intersection of music production and software engineering. The site showcases upcoming iOS apps, hardware devices, and web-based products, while soft-promoting music and art via Bandcamp and SoundCloud. Built with a neo-brutalist dark mode design system on Astro, deployed to Vercel as a fully static site. Features smooth page transitions, animated canvas backgrounds, interactive CSS effects (glitch text, magnetic buttons), and subdomain infrastructure for per-app mini-sites.
 
 ## Core Value
 
@@ -18,14 +18,21 @@ The site must establish tuniice as a credible, distinctive brand that makes visi
 - Neo-brutalist dark mode design with monochrome + neon green accent palette — v1.0
 - Responsive design (mobile + desktop) — v1.0
 - Deployed on Vercel — v1.0
+- Smooth fade page transitions with per-page overrides (slide for products, scale for story) — v1.1
+- Canvas particle field animation with lifecycle-safe RAF and HiDPI support — v1.1
+- Visibility-based animation pause + prefers-reduced-motion fallback — v1.1
+- Glitch text on hero headline + hover distortion on product cards — v1.1
+- Magnetic cursor-follow on buttons with accessibility gating — v1.1
+- Subdomain infrastructure with shared design system and per-app accent colors — v1.1
+- bluepriint.tuniice.com live with amber accent and landing page — v1.1
 
 ### Active
 
-- [ ] Canvas/WebGL animated backgrounds (particle fields, generative art)
-- [ ] Page transitions via JS library (Swup/Barba.js) with broad browser support
-- [ ] Interactive elements (cursor effects, hover distortions, glitch text, scroll-reactive)
-- [ ] Subdomain infrastructure for app mini-sites with shared design system
-- [ ] Bluepriint app site at bluepriint.tuniice.com (full mini-site)
+- [ ] 3D tilt effect on product cards on hover
+- [ ] Scroll-reactive section transforms (parallax, scale, rotation)
+- [ ] Generative art backgrounds per-section (beyond particles)
+- [ ] Additional app subdomains following the Bluepriint pattern
+- [ ] Bluepriint site with multiple pages and real content
 
 ### Out of Scope
 
@@ -35,55 +42,50 @@ The site must establish tuniice as a credible, distinctive brand that makes visi
 - CMS / admin panel — content managed via code for now
 - OAuth / user accounts — no user-facing auth needed
 - Analytics dashboard — basic Vercel analytics sufficient
-- Light mode — dark mode only, confirmed for v1.1
+- Light mode — dark mode is core brand identity
+- Custom cursor replacement — magnetic hover effects achieve same brand energy without accessibility cost
+- GSAP/Three.js — overkill for current effects; 60kb+ for capabilities not yet needed
+- Monorepo tooling — not needed at current scale (1 subdomain)
 
 ## Context
 
-- Greg is a music producer and software engineer building a personal brand that spans both disciplines
-- iOS apps, hardware devices, and web apps are in development but not yet ready to show
-- Music is already published on Bandcamp and SoundCloud
-- Site is live on Vercel as static Astro build (~1,800 LOC across Astro, TypeScript, CSS)
-- 6 pages: Home, Products, 4 product detail pages, Story
-- Tech stack: Astro 5.x, CSS custom properties, Intersection Observer for animations
-- Placeholder content exists for: music embed URLs, avatar image, product descriptions
-- Formspree integration for email signup (needs env var configured in Vercel)
-- Bluepriint: master clock/tempo control with arrangement for live PA, electronic music producers and DJs (iOS app, content to be provided)
-- Subdomain sites share the neo-brutalist design system but each app can have its own accent color
-
-## Current Milestone: v1.1 UI Candy & Subdomains
-
-**Goal:** Add bold visual effects (animated backgrounds, page transitions, interactive elements) to the main site and build subdomain infrastructure for app mini-sites, starting with Bluepriint.
-
-**Target features:**
-- Animated backgrounds (Canvas/WebGL particles, generative art)
-- Page transitions (JS library for broad browser support)
-- Interactive elements (cursor effects, hover distortions, glitch text)
-- Subdomain routing and shared design system
-- Bluepriint mini-site as first app subdomain
+Shipped v1.1 with ~3,300 LOC across Astro, TypeScript, CSS.
+Tech stack: Astro 5.x, CSS custom properties, Canvas 2D, vanilla JS.
+6 pages on main site: Home, Products, 4 product detail pages, Story.
+1 subdomain live: bluepriint.tuniice.com (standalone Astro project, amber accent).
+Formspree integration for email signup (needs env var configured in Vercel).
+Placeholder content exists for: music embed URLs, avatar image, product descriptions, Bluepriint product copy.
 
 ## Constraints
 
 - **Tech stack**: Astro — chosen for fast static sites with easy content expansion later
-- **Hosting**: Vercel — easy deployment, good Astro support
-- **Design**: Neo-brutalism, dark mode only, monochrome + neon green accents
+- **Hosting**: Vercel — easy deployment, good Astro support; separate project per subdomain
+- **Design**: Neo-brutalism, dark mode only, monochrome + neon green accents (amber for Bluepriint)
 - **Design inspiration**: Teenage Engineering (EP-133 KO II and similar devices)
 - **Content**: Placeholder content in several areas — replace as real content becomes available
+- **Dependencies**: Zero external JS dependencies for effects — pure CSS + vanilla JS only
 
 ## Key Decisions
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Astro over Next.js | Content-focused static site, no need for React complexity | Good — fast builds, simple DX |
-| Dark mode only | Matches brand aesthetic, reduces design scope | Good — cohesive look |
-| Neon green accent | High contrast against dark, terminal/hacker energy | Good — distinctive brand color |
-| No CMS | Content is sparse and changes infrequently | Good — simpler workflow |
-| CSS custom properties over Tailwind | Design tokens in pure CSS, no build dependency | Good — clean, maintainable |
-| Intersection Observer for animations | Zero-dependency scroll animations | Good — lightweight |
-| Formspree for email signup | Backend-free form handling on static site | Good — simple integration |
-| Single Story page over separate About + Music | Unified narrative flow | Good — more compelling |
-| Stay dark mode for v1.1 | Dark mode is core brand identity, light mode deferred | Good — focus on effects |
-| JS page transition library over View Transitions API | Broader browser support (Firefox) | — Pending |
-| Shared design system across subdomains | Consistent brand, less maintenance | — Pending |
+| Astro over Next.js | Content-focused static site, no need for React complexity | Good |
+| Dark mode only | Matches brand aesthetic, reduces design scope | Good |
+| Neon green accent | High contrast against dark, terminal/hacker energy | Good |
+| No CMS | Content is sparse and changes infrequently | Good |
+| CSS custom properties over Tailwind | Design tokens in pure CSS, no build dependency | Good |
+| Intersection Observer for animations | Zero-dependency scroll animations | Good |
+| Formspree for email signup | Backend-free form handling on static site | Good |
+| Single Story page over separate About + Music | Unified narrative flow | Good |
+| Astro ClientRouter for transitions | Already active, Swup conflicts with it | Good — clean lifecycle |
+| Raw Canvas 2D for particles | No new dependencies, full control | Good — performant |
+| Pure CSS + vanilla JS for effects | Zero dependencies, easy to maintain | Good — lightweight |
+| Separate Vercel project per subdomain | No monorepo tooling needed at current scale | Good — simple |
+| Forked tokens.css for subdomains | Only accent color differs, all other tokens shared | Good — minimal divergence |
+| DNS CNAME + Vercel auto-SSL | Zero-config HTTPS for subdomains | Good |
+| DPR capped at 2x | GPU memory control on ultra-dense displays | Good |
+| Module-level RAF lifecycle | Prevents stacking across Astro navigations | Good |
+| Dual-gated effects (pointer:fine + reduced-motion) | Accessibility without separate code paths | Good |
 
 ---
-*Last updated: 2026-03-01 after v1.1 milestone started*
+*Last updated: 2026-03-04 after v1.1 milestone*

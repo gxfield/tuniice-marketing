@@ -1,5 +1,25 @@
 # Milestones
 
+## v1.1 UI Candy & Subdomains (Shipped: 2026-03-04)
+
+**Phases completed:** 4 phases, 8 plans
+**Timeline:** 2026-01-28 → 2026-03-03 (34 days)
+**Lines of code:** ~3,300 total codebase (Astro, TypeScript, CSS)
+**Requirements:** 16/16 satisfied
+**Git range:** feat(07-01) → feat(10-01)
+
+**Key accomplishments:**
+1. Smooth page transitions with per-page styles (fade default, slide for products, scale for story)
+2. Canvas particle field animation with lifecycle-safe RAF management and HiDPI support
+3. Visibility-based animation pause/resume + prefers-reduced-motion fallback
+4. Glitch text on hero headline + CSS clip-path glitch on product cards
+5. Magnetic cursor-follow on buttons with dual-gated accessibility (pointer:fine + reduced-motion)
+6. bluepriint.tuniice.com live subdomain with amber accent design tokens
+
+**Delivered:** Bold visual effects and subdomain infrastructure that make the site feel alive and establish the pattern for per-app mini-sites.
+
+---
+
 ## v1.0 tuniice Marketing Site (Shipped: 2026-03-02)
 
 **Phases completed:** 6 phases (incl. 2 inserted), 11 plans
